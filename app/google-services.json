@@ -1,0 +1,41 @@
+{
+  "project_info": {
+    "project_number": "934723471172",
+    "firebase_url": "https://whatsapp-messages-bin.firebaseio.com",
+    "project_id": "whatsapp-messages-bin",
+    "storage_bucket": "whatsapp-messages-bin.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:934723471172:android:67423f119a315d83",
+        "android_client_info": {
+          "package_name": "com.im.bin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "934723471172-e9o7kngn6tails8ogifc4svulal30pjd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2L9Qx_Y1jtmWEdfw3WTw11-CkdWp0jOQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "934723471172-e9o7kngn6tails8ogifc4svulal30pjd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      },
+      "admob_app_id": "ca-app-pub-5833550661504199~7746179840"
+    }
+  ],
+  "configuration_version": "1"
+}

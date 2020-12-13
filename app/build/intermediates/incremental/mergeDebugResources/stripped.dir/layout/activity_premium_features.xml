@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:padding="20dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="15dp">
+
+        <ImageView
+            android:id="@+id/closeButton"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_close_black_24dp">
+        </ImageView>
+
+        <com.im.bin.customViews.RobotoBoldTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/closeButton"
+            android:layout_marginStart="10dp"
+            android:text="Premium Features"
+            android:textColor="@color/colorWhite"
+            android:textSize="22sp"></com.im.bin.customViews.RobotoBoldTextView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+
+        <com.im.bin.customViews.RobotoMediumTextView
+            android:id="@+id/remove_ads"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/fa_check"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp">
+        </com.im.bin.customViews.RobotoMediumTextView>
+
+        <com.im.bin.customViews.RobotoMediumTextView
+            android:id="@+id/back_conversations"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/fa_check"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp">
+        </com.im.bin.customViews.RobotoMediumTextView>
+
+        <com.im.bin.customViews.RobotoMediumButton
+            android:id="@+id/buyPremiumFeatures"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/shape_login"
+            android:maxLines="1"
+            android:padding="15dp"
+            android:shadowColor="@android:color/transparent"
+            android:text="Buy Premium"
+            android:textColor="@color/colorBlack"
+            android:textSize="17sp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

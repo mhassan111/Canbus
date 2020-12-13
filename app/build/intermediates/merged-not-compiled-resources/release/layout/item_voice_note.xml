@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+                                                                   
+
+    
+
+                 
+                            
+                                                          
+
+                 
+                            
+                                                                  
+           
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:tag="layout/item_voice_note_0" xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <RelativeLayout
+            android:id="@+id/voice_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:tag="binding_1"                                          
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <com.im.bin.customViews.RobotoMediumTextView
+                android:id="@+id/headphone_icon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/fa_headphones"
+                android:textColor="@color/darkerGrayColor"
+                android:textSize="45sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/headphone_icon"
+                android:gravity="start|center_vertical"
+                android:orientation="vertical">
+
+                <com.im.bin.customViews.RobotoMediumTextView
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:tag="binding_2"              
+                    android:textColor="@color/darkerGrayColor"
+                    android:textSize="16sp" />
+
+                <com.im.bin.customViews.RobotoLightTextView
+                    android:id="@+id/date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/name"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_horizontal"
+                    android:tag="binding_3"              
+                    android:textColor="@color/darkerGrayColor"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+         

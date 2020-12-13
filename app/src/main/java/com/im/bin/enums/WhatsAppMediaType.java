@@ -1,0 +1,12 @@
+package com.im.bin.enums;
+
+public enum WhatsAppMediaType {
+    WHATS_APP_PHOTOS,
+    WHATS_APP_VIDEOS,
+    WHATS_APP_VOICE_NOTES,
+    WHATS_APP_DOCUMNETS,
+    WHATS_APP_AUDIO,
+    WHATS_APP_STICKERS,
+    WHATS_APP_ANIMATED_GIF,
+    WHATS_APP_STATUSES
+}

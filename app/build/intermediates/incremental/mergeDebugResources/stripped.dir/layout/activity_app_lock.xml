@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:fitsSystemWindows="true">
+
+    <LinearLayout
+            android:id="@+id/lock_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+        <LinearLayout
+                android:id="@+id/pin_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+            <com.im.bin.customViews.RobotoBoldTextView
+                    android:id="@+id/lock_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/fa_lock"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="125sp"></com.im.bin.customViews.RobotoBoldTextView>
+
+            <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/etPasswordLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginEnd="30dp"
+                    android:textColorHint="@color/colorWhite"
+                    app:passwordToggleEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/pin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter Pin Code"
+                        android:inputType="numberPassword"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="25sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/nickNameLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="30dp"
+                    android:textColorHint="@color/colorWhite"
+                    app:passwordToggleEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/nick_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter Nick Name"
+                        android:inputType="text"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="25sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.im.bin.customViews.RobotoBoldTextView
+                    android:id="@+id/forget_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:gravity="center"
+                    android:text="Note: - Enter Nick Name to Recover Pin In case You forget Pin"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="13sp"></com.im.bin.customViews.RobotoBoldTextView>
+
+        </LinearLayout>
+
+        <!--    <com.im.bin.customViews.RobotoMediumEditText-->
+        <!--            android:id="@+id/pin"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginTop="30dp"-->
+        <!--            android:layout_marginStart="30dp"-->
+        <!--            android:layout_marginEnd="30dp"-->
+        <!--            android:gravity="center"-->
+        <!--            android:ems="4"-->
+        <!--            android:textColor="@color/colorWhite"-->
+        <!--            android:textColorHint="@color/colorWhite"-->
+        <!--            android:hint="Enter Your Pin"-->
+        <!--            android:inputType="numberPassword">-->
+        <!--    </com.im.bin.customViews.RobotoMediumEditText>-->
+
+        <com.im.bin.customViews.RobotoLightButton
+                android:id="@+id/enter_pin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="30dp"
+                android:background="@color/colorWhite"
+                android:text="Enter"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp"></com.im.bin.customViews.RobotoLightButton>
+
+        <com.im.bin.customViews.RobotoBoldTextView
+                android:id="@+id/status"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="30dp"
+                android:gravity="center"
+                android:textColor="@color/colorRedBlood"
+                android:textSize="20sp"></com.im.bin.customViews.RobotoBoldTextView>
+
+        <com.im.bin.customViews.RobotoBoldTextView
+                android:id="@+id/forget_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:gravity="center"
+                android:text="Recover Pin?"
+                android:textColor="@color/colorWhite"
+                android:textSize="16sp">
+        </com.im.bin.customViews.RobotoBoldTextView>
+
+        <FrameLayout
+            android:id="@+id/ad_view_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="5dp">
+        </FrameLayout>
+    </LinearLayout>
+</ScrollView>

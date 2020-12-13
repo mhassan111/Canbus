@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data class="LoginActivityBinding">
+
+        <import type="android.view.View" />
+
+        <variable
+            name="viewModel"
+            type="com.im.bin.viewModel.LoginViewModel" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:fitsSystemWindows="true"
+        tools:ignore="MissingPrefix">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginBottom="10dp"
+                        android:contentDescription="@null"
+                        android:src="@drawable/login" />
+
+                    <com.im.bin.customViews.RobotoMediumEditText
+                        android:id="@+id/email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/shape_email"
+                        android:drawableStart="@drawable/ic_person_black_24dp"
+                        android:drawablePadding="10dp"
+                        android:hint="@string/email_hint_text"
+                        android:inputType="text"
+                        android:scrollHorizontally="true"
+                        android:ellipsize="end"
+                        android:padding="15dp"
+                        android:text="@={viewModel.email}"
+                        android:textColor="@color/colorWhite"
+                        android:textColorHighlight="@color/colorWhite"
+                        android:textColorHint="@color/colorWhite" />
+
+                    <com.im.bin.customViews.RobotoMediumEditText
+                        android:id="@+id/password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/shape_email"
+                        android:drawableStart="@drawable/ic_lock_black_24dp"
+                        android:drawablePadding="10dp"
+                        android:hint="@string/password_hint_text"
+                        android:inputType="textPassword"
+                        android:scrollHorizontally="true"
+                        android:ellipsize="end"
+                        android:padding="15dp"
+                        android:text="@={viewModel.password}"
+                        android:textColor="@color/colorWhite"
+                        android:textColorHighlight="@color/colorWhite"
+                        android:textColorHint="@color/colorWhite" />
+
+                    <com.im.bin.customViews.RobotoMediumButton
+                        android:id="@+id/signIn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/shape_login"
+                        android:maxLines="1"
+                        android:onClick="@{(v) -> viewModel.onSignInClick(v)}"
+                        android:padding="15dp"
+                        android:shadowColor="@android:color/transparent"
+                        android:text="Log In"
+                        android:textSize="17sp" />
+
+                    <com.im.bin.customViews.RobotoMediumButton
+                        android:id="@+id/signUp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/shape_sign_up"
+                        android:maxLines="1"
+                        android:padding="15dp"
+                        android:shadowColor="@android:color/transparent"
+                        android:text="@string/sign_up_text"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="17sp" />
+
+                    <ProgressBar
+                        android:id="@+id/progress_par"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:visibility="@{viewModel.loadProgressBar ? View.VISIBLE : View.GONE}"></ProgressBar>
+                </LinearLayout>
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+</layout>

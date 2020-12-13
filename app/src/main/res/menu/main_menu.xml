@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/search"
+        android:icon="@drawable/ic_search_black_24dp"
+        android:title="Search"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:showAsAction="collapseActionView|always" />
+
+    <item
+        android:id="@+id/remove_ads"
+        android:title="Remove Ads"
+        app:showAsAction="never"></item>
+
+    <item
+        android:id="@+id/buy_premium"
+        android:title="Premium Features"
+        app:showAsAction="never"></item>
+
+    <item
+        android:id="@+id/delete"
+        android:orderInCategory="1"
+        android:title="Delete Conversation"
+        app:showAsAction="never"></item>
+
+    <item
+        android:id="@+id/upload"
+        android:title="Backup Conversation"
+        app:showAsAction="never"></item>
+
+    <item
+        android:id="@+id/refresh"
+        android:title="Fetch Updated Conversation"
+        app:showAsAction="never"></item>
+
+    <item
+        android:id="@+id/backup_chats"
+        android:title="Backup All Chats"
+        app:showAsAction="never"></item>
+
+    <item
+        android:id="@+id/refresh_chats"
+        android:title="Fetch Updated Chats"
+        app:showAsAction="never"></item>
+
+    <item
+        android:id="@+id/delete_all"
+        android:title="Delete All"
+        app:showAsAction="never"></item>
+
+    <item
+        android:id="@+id/settings"
+        android:title="Settings"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/logOut"
+        android:title="LogOut"
+        app:showAsAction="never" />
+
+</menu>
