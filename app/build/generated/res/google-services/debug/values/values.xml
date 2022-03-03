@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="default_web_client_id" translatable="false">934723471172-e9o7kngn6tails8ogifc4svulal30pjd.apps.googleusercontent.com</string>
-    <string name="firebase_database_url" translatable="false">https://whatsapp-messages-bin.firebaseio.com</string>
-    <string name="gcm_defaultSenderId" translatable="false">934723471172</string>
-    <string name="google_api_key" translatable="false">AIzaSyC2L9Qx_Y1jtmWEdfw3WTw11-CkdWp0jOQ</string>
-    <string name="google_app_id" translatable="false">1:934723471172:android:67423f119a315d83</string>
-    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyC2L9Qx_Y1jtmWEdfw3WTw11-CkdWp0jOQ</string>
-    <string name="google_storage_bucket" translatable="false">whatsapp-messages-bin.appspot.com</string>
-    <string name="project_id" translatable="false">whatsapp-messages-bin</string>
+    <string name="default_web_client_id" translatable="false">480258070322-31uoeanks4npmbv1m26njras009ag7i4.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">480258070322</string>
+    <string name="google_api_key" translatable="false">AIzaSyAh3NRBrUj-3JPSZH5f_BEag0VqIfnRGU0</string>
+    <string name="google_app_id" translatable="false">1:480258070322:android:c0a71228d9dd39dc40e92b</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyAh3NRBrUj-3JPSZH5f_BEag0VqIfnRGU0</string>
+    <string name="google_storage_bucket" translatable="false">wholespy.appspot.com</string>
+    <string name="project_id" translatable="false">wholespy</string>
 </resources>

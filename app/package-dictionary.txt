@@ -1,7 +1,0 @@
-# A custom method dictonary
-
-NUL
-FoW3
-LoS1
-Lop4
-9DSc

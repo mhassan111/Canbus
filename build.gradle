@@ -1,64 +1,62 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
+import com.os.system.buildsrc.Libs
 
 buildscript {
-    ext.kotlin_version = '1.3.72'
     repositories {
-        maven {
-            url "https://maven.google.com"
-        }
-        maven { url 'https://maven.fabric.io/public' }
         google()
-        jcenter()
+        mavenCentral()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.5.0'
-        classpath 'io.fabric.tools:gradle:1.31.1'
-        classpath 'com.google.gms:google-services:4.3.2'
-        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
-        // NOTE: Do not place your application dependencies here; they belong
-        // in the individual module build.gradle files
+        classpath Libs.Plugins.androidGradlePlugin
+        classpath Libs.Plugins.googlePlayServicesPlugin
+        classpath Libs.Plugins.firebaseCrashlyticsPlugin
+        classpath Libs.Plugins.kotlinPlugin
+        classpath Libs.Plugins.hiltPlugin
     }
 }
 
-allprojects {
+plugins {
+    id 'com.diffplug.spotless' version '6.0.0'
+}
+
+subprojects {
     repositories {
-        maven { url 'https://maven.fabric.io/public' }
         google()
-        jcenter()
+        mavenCentral()
+
+        if (!Libs.AndroidX.Compose.snapshot.isEmpty()) {
+            maven { url "https://androidx.dev/snapshots/builds/${Libs.AndroidX.Compose.snapshot}/artifacts/repository/" }
+        }
+        if (Libs.Accompanist.accompanist_inset_version.endsWith("SNAPSHOT")) {
+            maven { url 'https://oss.sonatype.org/content/repositories/snapshots/' }
+        }
     }
-}
 
-task clean(type: Delete) {
-    delete rootProject.buildDir
-}
+    tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).configureEach {
+        kotlinOptions {
+            // Treat all Kotlin warnings as errors (disabled by default)
+            allWarningsAsErrors = project.hasProperty("warningsAsErrors") ? project.warningsAsErrors : false
+            // Opt-in to experimental compose APIs
+            freeCompilerArgs += '-Xopt-in=kotlin.RequiresOptIn'
+            jvmTarget = '1.8'
+        }
+    }
 
+    configurations.configureEach {
+        // androidx.test forces JUnit, 4.12, prefer 4.13
+        resolutionStrategy {
+            force Libs.Test.junit
+        }
+    }
 
-ext {
-    supportLibVersion = '1.1.0'
-    butterKnifeVer = '10.0.0'
-    constraintLayoutVersion = '1.1.3'
-    playServiceLocationVersion = '16.0.0'
-    locationVersion = '17.0.0'
-    mapsVersion = '17.0.0'
-    CircularImageLib = '3.0.1'
-    workManagerVer = '2.2.0'
-    rxAndroidVersion = '2.1.1'
-    timberVersion = '4.7.1'
-    rxJavaVersion = '2.2.10'
-    fragmentVersion = '1.2.4'
-    lifeCycleVersion = '2.2.0'
-    okhttpVersion = "2.7.2"
-    retrofitVersion = "2.6.0"
-    roomVersion = '2.2.5'
-    daggerVersion = '2.24'
-    kotlinVersion = '1.3.61'
-    loggerVersion = '2.2.0'
-    multiDexVersion = '1.0.3'
-    firebaseCoreVersion ='17.4.0'
-    firebaseFireStoreVersion = '21.4.3'
-    firebaseAdMobVersion = '19.1.0'
-    firebaseAuthVersion = '19.3.1'
-    coroutinesCoreVersion = '1.3.0'
-    coroutinesVersion = '1.2.1'
-    tableViewLib = '0.8.8'
+    apply plugin: 'com.diffplug.spotless'
+    spotless {
+        kotlin {
+            target '**/*.kt'
+            targetExclude("$buildDir/**/*.kt")
+            targetExclude('bin/**/*.kt')
+            ktlint(Versions.ktlint).userData([android: "true"])
+            licenseHeaderFile rootProject.file('spotless/copyright.kt')
+        }
+    }
 }

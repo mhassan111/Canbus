@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/WDS.iml" filepath="$PROJECT_DIR$/.idea/modules/WDS.iml" group="WDS" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.iml" group="WDS/app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TOSRevamp.iml" filepath="$PROJECT_DIR$/.idea/modules/TOSRevamp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/TOSRevamp.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/TOSRevamp.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TOSRevamp.buildSrc.iml" filepath="$PROJECT_DIR$/.idea/modules/TOSRevamp.buildSrc.iml" />
     </modules>
   </component>
 </project>
