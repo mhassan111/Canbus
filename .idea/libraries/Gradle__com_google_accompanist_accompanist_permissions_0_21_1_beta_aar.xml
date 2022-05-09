@@ -1,9 +1,19 @@
 <component name="libraryTable">
   <library name="Gradle: com.google.accompanist:accompanist-permissions:0.21.1-beta@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/c3e92218596a63de294abc1cf729962c/transformed/jetified-accompanist-permissions-0.21.1-beta/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/c3e92218596a63de294abc1cf729962c/transformed/jetified-accompanist-permissions-0.21.1-beta/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/c3e92218596a63de294abc1cf729962c/transformed/jetified-accompanist-permissions-0.21.1-beta/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/8630b672e6157062d99ac346213b2081/transformed/jetified-accompanist-permissions-0.21.1-beta/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/f66c404946ef2f4299cb0272c872df28/transformed/jetified-accompanist-permissions-0.21.1-beta/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/103ba63322e072bb1e4b3b073adaab7b/transformed/jetified-accompanist-permissions-0.21.1-beta/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/ad592ebeab87feb7046b5ed75956142c/transformed/jetified-accompanist-permissions-0.21.1-beta/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/ad592ebeab87feb7046b5ed75956142c/transformed/jetified-accompanist-permissions-0.21.1-beta/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/ad592ebeab87feb7046b5ed75956142c/transformed/jetified-accompanist-permissions-0.21.1-beta/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/e3194c202c1d4eec7606c1fb50f223d1/transformed/jetified-accompanist-permissions-0.21.1-beta/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/6f1b2fdb08ef5ae87a97f9bd93578080/transformed/jetified-accompanist-permissions-0.21.1-beta/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/fe81fd7089e18446268c215e0d161e58/transformed/jetified-accompanist-permissions-0.21.1-beta/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/d4bb616f046d4fd083bc7c422c28ddfa/transformed/jetified-accompanist-permissions-0.21.1-beta/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/8264e5bc41ee2603f8c8bee59916498d/transformed/jetified-accompanist-permissions-0.21.1-beta/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/8264e5bc41ee2603f8c8bee59916498d/transformed/jetified-accompanist-permissions-0.21.1-beta/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/8264e5bc41ee2603f8c8bee59916498d/transformed/jetified-accompanist-permissions-0.21.1-beta/res" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.accompanist/accompanist-permissions/0.21.1-beta/a5f198ea444a293d2927f6e11c6605ac1d068e01/accompanist-permissions-0.21.1-beta-javadoc.jar!/" />

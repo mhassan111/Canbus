@@ -7,5 +7,14 @@
         <item name="android:navigationBarColor">@color/nav_bar</item>
     </style>
 
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <item name="android:colorPrimary">#FF604CDB</item>
+        <item name="android:colorPrimaryDark">#FF4837B5</item>
+        <item name="android:colorAccent">#ff00ff</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
     <style name="Theme.Material.DayNight.NoActionBar" parent="@android:style/Theme.Material.Light.NoActionBar" />
 </resources>

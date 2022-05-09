@@ -2,8 +2,9 @@ plugins {
     id 'com.android.application'
     id 'kotlin-android'
     id 'kotlin-kapt'
+    id 'kotlin-parcelize'
     id 'dagger.hilt.android.plugin'
-    id 'com.google.devtools.ksp' version '1.6.10-1.0.2' // Depends on your kotlin version
+    id 'com.google.devtools.ksp' version '1.6.10-1.0.2'
 }
 
 kotlin {
@@ -17,27 +18,71 @@ kotlin {
     }
 }
 
-import com.os.system.buildsrc.Libs
-import com.os.system.buildsrc.ConfigData
+import com.screening.app.buildsrc.Libs
+import com.screening.app.buildsrc.ConfigData
 
 android {
+    signingConfigs {
+        release {
+            storeFile file('/Users/hassan/Desktop/MacHome/Call-Sms-Screening/project/Keystore')
+            storePassword 'screening12'
+            keyAlias 'screeningKey'
+            keyPassword 'screening12'
+        }
+    }
     compileSdk ConfigData.compileSdkVersion
 
+    if (project.hasProperty("devBuild")) {
+        splits.abi.enable = false
+        splits.abi.density = false
+        apptOptions.cruncherEnabled = false
+    }
+
     defaultConfig {
-        applicationId "com.os.system"
+        applicationId "com.screening.app"
         minSdk ConfigData.minSdkVersion
         targetSdk ConfigData.targetSdkVersion
         versionCode ConfigData.versionCode
         versionName ConfigData.versionName
+        resConfigs "en", "xxhdpi"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
     buildTypes {
+        debug {
+            ext.alwaysUpdateBuildId = false
+            ext.enableCrashlytics = false
+        }
         release {
             minifyEnabled false
+            crunchPngs false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
         }
     }
+
+//    flavorDimensions "stage"
+//    productFlavors {
+//        // When building a variant that uses this flavor, the following configurations
+//        // override those in the defaultConfig block.
+//        dev {
+//            dimension "stage"
+//            // To avoid using legacy multidex when building from the command line,
+//            // set minSdkVersion to 21 or higher. When using Android Studio 2.3 or higher,
+//            // the build automatically avoids legacy multidex when deploying to a device running
+//            // API level 21 or higher—regardless of what you set as your minSdkVersion.
+//            resConfigs "en", "xxhdpi"
+//        }
+//
+//        prod {
+//            dimension "stage"
+//            // If you've configured the defaultConfig block for the release version of
+//            // your app, you can leave this block empty and Gradle uses configurations in
+//            // the defaultConfig block instead. You still need to create this flavor.
+//            // Otherwise, all variants use the "dev" flavor configurations.
+//        }
+//    }
+
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
@@ -56,7 +101,7 @@ android {
         shaders false
     }
     composeOptions {
-        kotlinCompilerExtensionVersion '1.1.0-rc02' // For Kotlin 1.6.10. Revert with rc03.
+        kotlinCompilerExtensionVersion '1.1.0-rc03' // For Kotlin 1.6.10. Revert with rc03.
     }
 //    composeOptions {
 //        kotlinCompilerExtensionVersion Libs.AndroidX.Compose.compose_version
@@ -72,6 +117,7 @@ dependencies {
 
     // Kotlin
     implementation Libs.Kotlin.stdlib
+    implementation Libs.Kotlin.kts
 
     // Android Support Lib
     implementation Libs.AndroidX.coreKtx
@@ -89,8 +135,10 @@ dependencies {
     implementation Libs.AndroidX.Compose.runtime
     implementation Libs.AndroidX.Compose.activity
     implementation Libs.AndroidX.Compose.navigation
+    implementation Libs.AndroidX.Compose.foundation
     implementation Libs.Accompanist.permissions
     implementation Libs.Hilt.navigationCompose
+    implementation Libs.Accompanist.systemUiController
 
     // Coroutines
     implementation Libs.Coroutines.core
@@ -111,6 +159,8 @@ dependencies {
     implementation Libs.Firebase.firebase_crashlytics
     implementation Libs.Firebase.firebase_analytics
     implementation Libs.Firebase.firebase_messaging
+    implementation Libs.Firebase.firebase_firestore
+    implementation Libs.Firebase.firebase_auth
 
     // Retrofit
     implementation Libs.Retrofit.retrofit
@@ -121,6 +171,9 @@ dependencies {
     // Okhttp
     implementation Libs.Okhttp.ok_http
 
+    // LibPhone
+    implementation Libs.LibPhone.libPhoneNumber
+
     // Testing
     testImplementation Libs.Test.junit
     androidTestImplementation Libs.Test.extJunit
@@ -129,10 +182,11 @@ dependencies {
     debugImplementation Libs.Test.composeToolingTest
 
     // Compose Destination Library
-    implementation Libs.AndroidX.Compose.Library.raamcosta_compose_detination
-    ksp Libs.AndroidX.Compose.Library.raamcosta_ksp
+//    implementation Libs.AndroidX.Compose.Library.raamcosta_compose_detination
+//    ksp Libs.AndroidX.Compose.Library.raamcosta_ksp
 
 }
 
 apply plugin: 'com.google.gms.google-services'
+apply plugin: 'kotlin-android'
 apply plugin: 'com.google.firebase.crashlytics'

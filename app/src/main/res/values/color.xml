@@ -17,6 +17,8 @@
     <color name="immersive_sys_ui">#33000000</color>
     <color name="nav_bar">@color/immersive_sys_ui</color>
 
+    <color name="colorPrimary">#FF604CDB</color>
+    <color name="colorPrimaryDark">#FF4837B5</color>
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
     <color name="purple_700">#FF3700B3</color>

@@ -1,9 +1,12 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.compose.material:material-icons-core:1.0.5@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/2ea527e06012b79310154ab48c16d975/transformed/jetified-material-icons-core-1.0.5/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/2ea527e06012b79310154ab48c16d975/transformed/jetified-material-icons-core-1.0.5/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/2ea527e06012b79310154ab48c16d975/transformed/jetified-material-icons-core-1.0.5/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/7d36b417ee32fc0e1718cba30a035d25/transformed/jetified-material-icons-core-1.0.5/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/7d36b417ee32fc0e1718cba30a035d25/transformed/jetified-material-icons-core-1.0.5/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/7d36b417ee32fc0e1718cba30a035d25/transformed/jetified-material-icons-core-1.0.5/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/2922c2047909fd236c9912bba32f743c/transformed/jetified-material-icons-core-1.0.5/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/2922c2047909fd236c9912bba32f743c/transformed/jetified-material-icons-core-1.0.5/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/2922c2047909fd236c9912bba32f743c/transformed/jetified-material-icons-core-1.0.5/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

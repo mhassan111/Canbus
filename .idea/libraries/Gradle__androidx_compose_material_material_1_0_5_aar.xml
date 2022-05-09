@@ -1,9 +1,12 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.compose.material:material:1.0.5@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/1731a2d56cd62ce2da80f4f5f662136a/transformed/jetified-material-1.0.5/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/1731a2d56cd62ce2da80f4f5f662136a/transformed/jetified-material-1.0.5/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/1731a2d56cd62ce2da80f4f5f662136a/transformed/jetified-material-1.0.5/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/59412e2cdb9e76840bacc1b4f37d32a6/transformed/jetified-material-1.0.5/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/59412e2cdb9e76840bacc1b4f37d32a6/transformed/jetified-material-1.0.5/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/59412e2cdb9e76840bacc1b4f37d32a6/transformed/jetified-material-1.0.5/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/903a82dffab2195d7caee6b602da66b4/transformed/jetified-material-1.0.5/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/903a82dffab2195d7caee6b602da66b4/transformed/jetified-material-1.0.5/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/903a82dffab2195d7caee6b602da66b4/transformed/jetified-material-1.0.5/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

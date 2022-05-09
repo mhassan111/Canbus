@@ -1,4 +1,4 @@
-package com.os.system
+package com.screening.app
 
 import org.junit.Test
 

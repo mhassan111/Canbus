@@ -1,9 +1,12 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.compose.ui:ui-tooling:1.0.5@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/0e160c0879d3b8a749663d32681f76ef/transformed/jetified-ui-tooling-1.0.5/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/0e160c0879d3b8a749663d32681f76ef/transformed/jetified-ui-tooling-1.0.5/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/0e160c0879d3b8a749663d32681f76ef/transformed/jetified-ui-tooling-1.0.5/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/b427a6002f4bb5044666db06176fafcb/transformed/jetified-ui-tooling-1.0.5/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/b427a6002f4bb5044666db06176fafcb/transformed/jetified-ui-tooling-1.0.5/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/b427a6002f4bb5044666db06176fafcb/transformed/jetified-ui-tooling-1.0.5/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/975194cbf70f20cfffde935a29888e9f/transformed/jetified-ui-tooling-1.0.5/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/975194cbf70f20cfffde935a29888e9f/transformed/jetified-ui-tooling-1.0.5/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/975194cbf70f20cfffde935a29888e9f/transformed/jetified-ui-tooling-1.0.5/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
