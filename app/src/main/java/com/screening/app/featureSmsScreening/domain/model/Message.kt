@@ -6,8 +6,8 @@ import java.util.*
 
 @Entity(tableName = "messages")
 data class Message(
-    @PrimaryKey val messageId: String,
-    val messageBody: String,
-    val messageType: String,
+    @PrimaryKey val id: String,
+    val body: String,
+    val type: String,
     val date: Date
 )

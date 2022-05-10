@@ -29,30 +29,27 @@ val Typography = Typography(
     ),
     h2 = TextStyle(
         fontWeight = FontWeight.SemiBold,
-        fontSize = 44.sp,
-        fontFamily = EczarFontFamily,
-        letterSpacing = 1.5.sp
+        fontSize = 30.sp
     ),
     h3 = TextStyle(
-        fontWeight = FontWeight.W400,
-        fontSize = 15.sp
+        fontWeight = FontWeight.W700,
+        fontSize = 25.sp
     ),
     h4 = TextStyle(
-        fontWeight = FontWeight.W700,
-        fontSize = 34.sp
+        fontWeight = FontWeight.W600,
+        fontSize = 20.sp
     ),
     h5 = TextStyle(
         fontWeight = FontWeight.Medium,
-        fontSize = 17.sp
+        fontSize = 15.sp
     ),
     h6 = TextStyle(
         fontWeight = FontWeight.SemiBold,
-        fontSize = 18.sp,
+        fontSize = 13.sp,
     ),
     subtitle1 = TextStyle(
         fontWeight = FontWeight.W200,
-        fontSize = 14.sp,
-        lineHeight = 20.sp,
+        fontSize = 14.sp
     ),
     subtitle2 = TextStyle(
         fontWeight = FontWeight.Normal,

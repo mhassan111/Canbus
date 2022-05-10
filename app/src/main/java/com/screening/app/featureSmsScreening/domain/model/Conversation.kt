@@ -6,8 +6,9 @@ import androidx.room.PrimaryKey
 @Entity(tableName = "conversations")
 data class Conversation(
     @PrimaryKey
-    val conversationId: String,
+    val id: String,
     val name: String,
     val phoneNumber: String,
+    val message: Message,
     val participants: List<Participant>
 )
