@@ -36,14 +36,20 @@ fun MessageItem(
     val isIncomingMessage = message.type == "Inbox"
     val contentAlignment = if (isIncomingMessage) Alignment.CenterStart
     else Alignment.CenterEnd
-    val backgroundColor = Color.Blue.copy(alpha = 0.8f)
+    val backgroundColor = if (isIncomingMessage) Color.DarkGray.copy(alpha = 0.1f) else
+        Color.Blue.copy(alpha = 0.1f)
 
     Box(modifier = modifier, contentAlignment = contentAlignment) {
-        Row(modifier = Modifier.fillMaxWidth(0.7f), verticalAlignment = Alignment.CenterVertically) {
+        Row(
+            modifier = Modifier.fillMaxWidth(0.7f),
+            verticalAlignment = Alignment.CenterVertically
+        ) {
             if (isIncomingMessage) {
                 InitialImage(
-                    text = "U", size = MaterialTheme.spacing.x3Dp,
-                    backgroundColor = Color.Blue, textStyle = MaterialTheme.typography.h5
+                    text = "U",
+                    size = MaterialTheme.spacing.x3Dp,
+                    backgroundColor = Color.Blue,
+                    textStyle = MaterialTheme.typography.h5
                 )
             }
             Spacer(modifier = Modifier.width(MaterialTheme.spacing.small))
@@ -71,7 +77,7 @@ fun MessageItem(
                 Text(
                     text = message.body,
                     style = MaterialTheme.typography.h5,
-                    color = Color.White
+                    color = Color.DarkGray
                 )
             }
         }

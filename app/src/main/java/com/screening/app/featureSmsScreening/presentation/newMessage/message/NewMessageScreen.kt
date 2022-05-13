@@ -49,7 +49,6 @@ fun NewMessageScreen(
     val backgroundColor = MaterialTheme.colors.primaryVariant
     val contentColor = Color.White
     val statusBarColor = MaterialTheme.colors.primaryVariant
-
     val messageState = viewModel.messageState.value
 
     DisposableEffect(key1 = lifeCycleOwner, effect = {
