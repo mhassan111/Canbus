@@ -34,7 +34,7 @@ class ConversationsViewModel @Inject constructor() : ViewModel() {
                             "Inbox",
                             Date()
                         ),
-                        emptyList()
+                       emptyList()
                     )
                 )
             }

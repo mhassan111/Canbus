@@ -79,6 +79,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.screening.app.featureSmsScreening.presentation.newMessage.NewMessageActivity"
+            android:exported="true" >
+            <intent-filter>
+                <data
+                    android:host="newmessage"
+                    android:scheme="screening" />
+            </intent-filter>
+        </activity>
         <activity android:name="com.screening.app.featureCallScreening.CallScreeningActivity" />
         <activity android:name="com.screening.app.featureImportContacts.ImportContactsActivity" />
 

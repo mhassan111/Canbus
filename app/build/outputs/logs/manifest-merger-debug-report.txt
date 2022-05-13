@@ -5,10 +5,10 @@ INJECTED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Scree
 		INJECTED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml
 		ADDED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:34:17-78
 manifest
-ADDED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:2:1-122:12
-INJECTED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:2:1-122:12
-INJECTED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:2:1-122:12
-INJECTED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:2:1-122:12
+ADDED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:2:1-131:12
+INJECTED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:2:1-131:12
+INJECTED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:2:1-131:12
+INJECTED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:2:1-131:12
 MERGED from [androidx.compose.ui:ui-tooling:1.0.5] /Users/muhammadhassan/.gradle/caches/transforms-3/975194cbf70f20cfffde935a29888e9f/transformed/jetified-ui-tooling-1.0.5/AndroidManifest.xml:17:1-30:12
 MERGED from [com.google.accompanist:accompanist-permissions:0.21.1-beta] /Users/muhammadhassan/.gradle/caches/transforms-3/8264e5bc41ee2603f8c8bee59916498d/transformed/jetified-accompanist-permissions-0.21.1-beta/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.accompanist:accompanist-systemuicontroller:0.17.0] /Users/muhammadhassan/.gradle/caches/transforms-3/d4fd2310fec8aee6021ed59ed5bc53c9/transformed/jetified-accompanist-systemuicontroller-0.17.0/AndroidManifest.xml:17:1-24:12
@@ -134,22 +134,22 @@ MERGED from [androidx.annotation:annotation-experimental:1.1.0] /Users/muhammadh
 MERGED from [com.google.dagger:dagger-lint-aar:2.38.1] /Users/muhammadhassan/.gradle/caches/transforms-3/b871eaeec672b9d3adc2bf897a66fb90/transformed/jetified-dagger-lint-aar-2.38.1/AndroidManifest.xml:16:1-19:12
 MERGED from [io.grpc:grpc-android:1.41.0] /Users/muhammadhassan/.gradle/caches/transforms-3/429d3b1fa2697a1f519190b0347ba324/transformed/jetified-grpc-android-1.41.0/AndroidManifest.xml:2:1-13:12
 MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] /Users/muhammadhassan/.gradle/caches/transforms-3/fb0e429a292b872b8b994df63f88e952/transformed/jetified-protolite-well-known-types-18.0.0/AndroidManifest.xml:2:1-11:12
-INJECTED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:2:1-122:12
-INJECTED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:2:1-122:12
-INJECTED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:2:1-122:12
+INJECTED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:2:1-131:12
+INJECTED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:2:1-131:12
+INJECTED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:2:1-131:12
 	package
 		ADDED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:4:5-32
 		INJECTED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml
-		ADDED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:2:1-122:12
+		ADDED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:2:1-131:12
 		INJECTED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml
 	xmlns:tools
 		ADDED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml
-		ADDED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:2:1-122:12
+		ADDED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:2:1-131:12
 		INJECTED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:2:11-69
@@ -252,7 +252,7 @@ ADDED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screenin
 	android:name
 		ADDED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:37:21-62
 application
-ADDED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:41:5-121:19
+ADDED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:41:5-130:19
 MERGED from [androidx.compose.ui:ui-tooling:1.0.5] /Users/muhammadhassan/.gradle/caches/transforms-3/975194cbf70f20cfffde935a29888e9f/transformed/jetified-ui-tooling-1.0.5/AndroidManifest.xml:24:5-28:19
 MERGED from [androidx.compose.ui:ui-tooling:1.0.5] /Users/muhammadhassan/.gradle/caches/transforms-3/975194cbf70f20cfffde935a29888e9f/transformed/jetified-ui-tooling-1.0.5/AndroidManifest.xml:24:5-28:19
 MERGED from [com.google.android.material:material:1.4.0] /Users/muhammadhassan/.gradle/caches/transforms-3/9441f604605472e1a3dfdc61b0059d23/transformed/material-1.4.0/AndroidManifest.xml:22:5-20
@@ -359,92 +359,106 @@ category#android.intent.category.LAUNCHER
 ADDED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:69:17-77
 	android:name
 		ADDED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:69:27-74
+activity#com.screening.app.featureSmsScreening.presentation.newMessage.NewMessageActivity
+ADDED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:73:9-80:20
+	android:exported
+		ADDED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:74:13-36
+	android:name
+		ADDED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:73:19-97
+intent-filter#data:host:newmessage+data:scheme:screening
+ADDED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:75:13-79:29
+data
+ADDED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:76:17-78:50
+	android:host
+		ADDED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:77:21-46
+	android:scheme
+		ADDED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:78:21-47
 activity#com.screening.app.featureCallScreening.CallScreeningActivity
-ADDED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:73:9-80
+ADDED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:82:9-80
 	android:name
-		ADDED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:73:19-77
+		ADDED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:82:19-77
 activity#com.screening.app.featureImportContacts.ImportContactsActivity
-ADDED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:74:9-82
+ADDED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:83:9-82
 	android:name
-		ADDED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:74:19-79
+		ADDED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:83:19-79
 receiver#com.screening.app.receivers.ScreenAppAdminReceiver
-ADDED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:76:9-89:20
+ADDED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:85:9-98:20
 	android:exported
-		ADDED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:78:13-37
+		ADDED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:87:13-37
 	android:permission
-		ADDED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:79:13-70
+		ADDED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:88:13-70
 	android:name
-		ADDED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:77:13-78
+		ADDED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:86:13-78
 intent-filter#action:name:android.app.action.DEVICE_ADMIN_DISABLED+action:name:android.app.action.DEVICE_ADMIN_ENABLED
-ADDED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:81:13-84:29
+ADDED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:90:13-93:29
 action#android.app.action.DEVICE_ADMIN_ENABLED
-ADDED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:82:17-82
+ADDED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:91:17-82
 	android:name
-		ADDED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:82:25-79
+		ADDED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:91:25-79
 action#android.app.action.DEVICE_ADMIN_DISABLED
-ADDED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:83:17-83
+ADDED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:92:17-83
 	android:name
-		ADDED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:83:25-80
+		ADDED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:92:25-80
 meta-data#android.app.device_admin
-ADDED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:86:13-88:63
+ADDED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:95:13-97:63
 	android:resource
-		ADDED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:88:17-60
+		ADDED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:97:17-60
 	android:name
-		ADDED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:87:17-56
+		ADDED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:96:17-56
 receiver#com.screening.app.receivers.PhoneCallStateReceiver
-ADDED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:91:9-98:20
-	android:exported
-		ADDED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:93:13-36
-	android:name
-		ADDED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:92:13-78
-intent-filter#action:name:android.intent.action.NEW_OUTGOING_CALL+action:name:android.intent.action.PHONE_STATE
-ADDED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:94:13-97:29
-	android:priority
-		ADDED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:94:28-50
-action#android.intent.action.NEW_OUTGOING_CALL
-ADDED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:95:17-82
-	android:name
-		ADDED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:95:25-79
-action#android.intent.action.PHONE_STATE
-ADDED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:96:17-76
-	android:name
-		ADDED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:96:25-73
-receiver#com.screening.app.receivers.BootReceiver
-ADDED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:100:9-106:20
+ADDED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:100:9-107:20
 	android:exported
 		ADDED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:102:13-36
 	android:name
-		ADDED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:101:13-51
-intent-filter#action:name:android.intent.action.BOOT_COMPLETED
-ADDED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:103:13-105:29
+		ADDED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:101:13-78
+intent-filter#action:name:android.intent.action.NEW_OUTGOING_CALL+action:name:android.intent.action.PHONE_STATE
+ADDED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:103:13-106:29
 	android:priority
 		ADDED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:103:28-50
-action#android.intent.action.BOOT_COMPLETED
-ADDED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:104:17-79
+action#android.intent.action.NEW_OUTGOING_CALL
+ADDED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:104:17-82
 	android:name
-		ADDED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:104:25-76
-service#com.screening.app.accessibility.AppAccessibilityService
-ADDED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:108:9-119:19
-	android:enabled
-		ADDED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:110:13-35
+		ADDED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:104:25-79
+action#android.intent.action.PHONE_STATE
+ADDED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:105:17-76
+	android:name
+		ADDED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:105:25-73
+receiver#com.screening.app.receivers.BootReceiver
+ADDED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:109:9-115:20
 	android:exported
 		ADDED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:111:13-36
+	android:name
+		ADDED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:110:13-51
+intent-filter#action:name:android.intent.action.BOOT_COMPLETED
+ADDED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:112:13-114:29
+	android:priority
+		ADDED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:112:28-50
+action#android.intent.action.BOOT_COMPLETED
+ADDED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:113:17-79
+	android:name
+		ADDED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:113:25-76
+service#com.screening.app.accessibility.AppAccessibilityService
+ADDED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:117:9-128:19
+	android:enabled
+		ADDED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:119:13-35
+	android:exported
+		ADDED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:120:13-36
 	android:permission
-		ADDED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:112:13-79
+		ADDED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:121:13-79
 	android:name
-		ADDED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:109:13-83
+		ADDED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:118:13-83
 intent-filter#action:name:android.accessibilityservice.AccessibilityService
-ADDED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:113:13-115:29
+ADDED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:122:13-124:29
 action#android.accessibilityservice.AccessibilityService
-ADDED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:114:17-92
+ADDED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:123:17-92
 	android:name
-		ADDED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:114:25-89
+		ADDED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:123:25-89
 meta-data#android.accessibilityservice
-ADDED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:116:13-118:57
+ADDED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:125:13-127:57
 	android:resource
-		ADDED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:118:17-54
+		ADDED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:127:17-54
 	android:name
-		ADDED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:117:17-60
+		ADDED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:126:17-60
 uses-sdk
 INJECTED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml
@@ -767,14 +781,6 @@ category#android.intent.category.BROWSABLE
 ADDED from [com.google.firebase:firebase-auth:21.0.1] /Users/muhammadhassan/.gradle/caches/transforms-3/4244c13f31c5b947a753b0b4a0535d25/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:37:17-78
 	android:name
 		ADDED from [com.google.firebase:firebase-auth:21.0.1] /Users/muhammadhassan/.gradle/caches/transforms-3/4244c13f31c5b947a753b0b4a0535d25/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:37:27-75
-data
-ADDED from [com.google.firebase:firebase-auth:21.0.1] /Users/muhammadhassan/.gradle/caches/transforms-3/4244c13f31c5b947a753b0b4a0535d25/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:39:17-42:51
-	android:path
-		ADDED from [com.google.firebase:firebase-auth:21.0.1] /Users/muhammadhassan/.gradle/caches/transforms-3/4244c13f31c5b947a753b0b4a0535d25/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:41:21-37
-	android:host
-		ADDED from [com.google.firebase:firebase-auth:21.0.1] /Users/muhammadhassan/.gradle/caches/transforms-3/4244c13f31c5b947a753b0b4a0535d25/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:40:21-49
-	android:scheme
-		ADDED from [com.google.firebase:firebase-auth:21.0.1] /Users/muhammadhassan/.gradle/caches/transforms-3/4244c13f31c5b947a753b0b4a0535d25/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:42:21-48
 activity#com.google.firebase.auth.internal.RecaptchaActivity
 ADDED from [com.google.firebase:firebase-auth:21.0.1] /Users/muhammadhassan/.gradle/caches/transforms-3/4244c13f31c5b947a753b0b4a0535d25/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:45:9-62:20
 	android:excludeFromRecents

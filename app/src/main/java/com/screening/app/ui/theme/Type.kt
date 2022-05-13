@@ -49,14 +49,14 @@ val Typography = Typography(
     ),
     subtitle1 = TextStyle(
         fontWeight = FontWeight.W200,
-        fontSize = 14.sp
+        fontSize = 18.sp
     ),
     subtitle2 = TextStyle(
-        fontWeight = FontWeight.Normal,
-        fontSize = 14.sp
+        fontWeight = FontWeight.W200,
+        fontSize = 15.sp
     ),
     body1 = TextStyle(
-        fontWeight = FontWeight.SemiBold,
+        fontWeight = FontWeight.W600,
         fontSize = 20.sp
     ),
     body2 = TextStyle(

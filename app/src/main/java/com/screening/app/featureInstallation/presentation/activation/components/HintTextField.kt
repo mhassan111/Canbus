@@ -23,6 +23,7 @@ fun HintTextField(
     modifier: Modifier = Modifier,
     isHintVisible: Boolean = true,
     onValueChange: (String) -> Unit,
+    textColor: Color = Color.White,
     textStyle: TextStyle = TextStyle(),
     singleLine: Boolean = false,
     onFocusChange: (FocusState) -> Unit,
@@ -48,20 +49,21 @@ fun HintTextField(
             colors = TextFieldDefaults.textFieldColors(
                 focusedIndicatorColor = Color.Transparent, //hide the indicator
                 unfocusedIndicatorColor = Color.Transparent,
-                cursorColor = WhiteColor,
-                textColor = WhiteColor
+                cursorColor = textColor,
+                textColor = textColor
             ),
             keyboardOptions = KeyboardOptions(imeAction = ImeAction.Done),
-            keyboardActions = KeyboardActions(onDone = {
-                onKeyboardActionDone()
-            })
+            keyboardActions = KeyboardActions(
+                onDone = {
+                    onKeyboardActionDone()
+                })
         )
         if (isHintVisible) {
             Text(
                 modifier = Modifier.padding(start = MaterialTheme.spacing.xDp),
                 text = hint,
                 style = textStyle,
-                color = WhiteColor
+                color = textColor
             )
         }
     }

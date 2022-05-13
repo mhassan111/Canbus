@@ -50,16 +50,16 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
 
-<!--        <activity-->
-<!--            android:name="com.screening.app.ui.activities.MainActivity"-->
-<!--            android:exported="true"-->
-<!--            android:label="@string/app_name">-->
-<!--            <intent-filter>-->
-<!--                <action android:name="android.intent.action.MAIN" />-->
-<!--                <category android:name="android.intent.category.LAUNCHER" />-->
-<!--            </intent-filter>-->
-<!--        </activity>-->
-<!--        -->
+        <!--        <activity-->
+        <!--            android:name="com.screening.app.ui.activities.MainActivity"-->
+        <!--            android:exported="true"-->
+        <!--            android:label="@string/app_name">-->
+        <!--            <intent-filter>-->
+        <!--                <action android:name="android.intent.action.MAIN" />-->
+        <!--                <category android:name="android.intent.category.LAUNCHER" />-->
+        <!--            </intent-filter>-->
+        <!--        </activity>-->
+        <!--        -->
         <activity
             android:name=".featureSmsScreening.SmsScreeningActivity"
             android:exported="true"
@@ -67,6 +67,15 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".featureSmsScreening.presentation.newMessage.NewMessageActivity"
+            android:exported="true">
+            <intent-filter>
+                <data
+                    android:host="newmessage"
+                    android:scheme="screening" />
             </intent-filter>
         </activity>
 

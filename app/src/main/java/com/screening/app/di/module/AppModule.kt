@@ -8,8 +8,8 @@ import com.screening.app.featureCallScreening.data.dataSource.AppDatabase
 import com.screening.app.featureCallScreening.data.repository.PhoneNumberRepositoryImpl
 import com.screening.app.featureCallScreening.domain.repository.PhoneNumberRepository
 import com.screening.app.featureCallScreening.domain.useCase.*
-import com.screening.app.featureImportContacts.data.repository.ContactRepositoryImpl
-import com.screening.app.featureImportContacts.domain.repository.ContactRepository
+import com.screening.app.featureImportContacts.data.repository.GetContactsRepositoryImpl
+import com.screening.app.featureImportContacts.domain.repository.GetContactsRepository
 import com.screening.app.featureInstallation.data.firebase.DeviceActivationFirebaseApiImpl
 import com.screening.app.featureInstallation.data.network.ActivateServiceNetworkApiImpl
 import com.screening.app.featureInstallation.domain.firebase.DeviceActivationFirebaseApi
@@ -17,6 +17,9 @@ import com.screening.app.featureInstallation.domain.network.ActivateServiceNetwo
 import com.screening.app.featureInstallation.domain.useCases.ActivateServiceUseCase
 import com.screening.app.featureInstallation.domain.useCases.DeviceActivationUseCase
 import com.screening.app.featureInstallation.presentation.permissions.MainViewModel
+import com.screening.app.featureSmsScreening.data.repository.ContactRepositoryImpl
+import com.screening.app.featureSmsScreening.domain.repository.ContactRepository
+import com.screening.app.featureSmsScreening.domain.useCase.*
 import com.screening.app.network.api.TOSApi
 import dagger.Module
 import dagger.Provides
@@ -41,14 +44,20 @@ object AppModule {
 
     @Provides
     @Singleton
+    fun provideContactsRepository(database: AppDatabase): ContactRepository {
+        return ContactRepositoryImpl(database.contactsDao)
+    }
+
+    @Provides
+    @Singleton
     fun providePhoneNumberRepository(database: AppDatabase): PhoneNumberRepository {
         return PhoneNumberRepositoryImpl(database.phoneNumberDao)
     }
 
     @Provides
     @Singleton
-    fun provideContactRepository(@ApplicationContext context: Context): ContactRepository {
-        return ContactRepositoryImpl(context)
+    fun provideContactRepository(@ApplicationContext context: Context): GetContactsRepository {
+        return GetContactsRepositoryImpl(context)
     }
 
     @Provides
@@ -59,6 +68,20 @@ object AppModule {
             getPhoneNumberByPhoneNumber = GetPhoneNumberByPhoneNumber(repository),
             insertPhoneNumberUseCase = InsertPhoneNumberUseCase(repository),
             deletePhoneNumberUseCase = DeletePhoneNumberUseCase(repository)
+        )
+    }
+
+    @Provides
+    @Singleton
+    fun provideContactUseCases(
+        repository: ContactRepository
+    ): ContactUseCases {
+        return ContactUseCases(
+            getContactUseCase = GetContactUseCase(repository),
+            insertContactsUseCase = InsertContactsUseCase(repository),
+            insertContactUseCase = InsertContactUseCase(repository),
+            deleteContactUseCase = DeleteContactUseCase(repository),
+            selectContactUseCase = SelectContactUseCase(repository)
         )
     }
 

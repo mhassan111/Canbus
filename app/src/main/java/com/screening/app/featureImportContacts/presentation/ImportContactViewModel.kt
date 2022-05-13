@@ -6,7 +6,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.screening.app.featureCallScreening.domain.model.PhoneNumber
 import com.screening.app.featureCallScreening.domain.repository.PhoneNumberRepository
-import com.screening.app.featureImportContacts.domain.repository.ContactRepository
+import com.screening.app.featureImportContacts.domain.repository.GetContactsRepository
 import com.screening.app.utilities.DateTimeUtil
 import com.screening.app.utilities.Util
 import dagger.hilt.android.lifecycle.HiltViewModel
@@ -19,7 +19,7 @@ import javax.inject.Inject
 @HiltViewModel
 class ImportContactViewModel @Inject constructor(
     private val phoneNumberRepository: PhoneNumberRepository,
-    private val contactRepository: ContactRepository
+    private val getContactsRepository: GetContactsRepository
 ) : ViewModel() {
 
     private var _importContactState = mutableStateOf<ImportContactState>(ImportContactState())
@@ -110,6 +110,7 @@ class ImportContactViewModel @Inject constructor(
                             )
                         }
                     }
+
                 }
             }
         }
@@ -118,7 +119,7 @@ class ImportContactViewModel @Inject constructor(
     fun importContacts(phoneNumbers: List<PhoneNumber>) {
         _importContactState.value = importContactState.value.copy(isLoading = true)
         viewModelScope.launch(Dispatchers.IO) {
-            contactRepository.getPhoneContacts().collectLatest { contactList ->
+            getContactsRepository.getContacts().collectLatest { contactList ->
                 val contactsIds = phoneNumbers.map { it.contactId }.filter { it.isNotBlank() }
                 contactList.forEachIndexed { index, contact ->
                     if (contactsIds.contains(contact.contactId)) {

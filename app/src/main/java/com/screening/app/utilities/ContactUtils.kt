@@ -1,24 +1,14 @@
-package com.screening.app.featureImportContacts.data.repository
+package com.screening.app.utilities
 
 import android.annotation.SuppressLint
 import android.content.Context
 import android.provider.ContactsContract
-import com.screening.app.MyApplication.Companion.appContext
 import com.screening.app.featureImportContacts.domain.model.Contact
-import com.screening.app.featureImportContacts.domain.repository.ContactRepository
-import com.screening.app.utilities.Util
-import com.screening.app.utilities.logException
-import kotlinx.coroutines.flow.Flow
-import kotlinx.coroutines.flow.flow
 
-class ContactRepositoryImpl(private val context: Context) : ContactRepository {
-
-    override fun getPhoneContacts(): Flow<List<Contact>> {
-        return flow { emit(retrieveContacts(context)) }
-    }
+object ContactUtils {
 
     @SuppressLint("Range")
-    private fun retrieveContacts(context: Context): List<Contact> {
+    fun retrieveContacts(context: Context): List<Contact> {
         val contacts = mutableListOf<Contact>()
         try {
             val managedCursor = context.contentResolver.query(
@@ -127,4 +117,5 @@ class ContactRepositoryImpl(private val context: Context) : ContactRepository {
         }
         return contacts
     }
+
 }

@@ -32,8 +32,8 @@ fun ConversationsScreen(
     }
 
     ConversationsList(
-        conversations = conversationState.conversations, modifier =
-        Modifier.fillMaxSize(),
+        conversations = conversationState.conversations,
+        modifier = Modifier.fillMaxSize(),
         onConversationTapped = { conversation ->
             viewModel.onEvent(ConversationEvent.ConversationTapped(conversation))
         }

@@ -3,16 +3,17 @@ package com.screening.app.featureSmsScreening.presentation.conversations.compone
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
-import androidx.compose.foundation.shape.CircleShape
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.layout.layout
+import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
+import androidx.compose.ui.unit.Dp
 import com.screening.app.featureSmsScreening.domain.model.Conversation
 import com.screening.app.ui.spacing
 
@@ -23,12 +24,16 @@ fun ConversationItem(
     onConversationTapped: () -> Unit
 ) {
 
-    Row(modifier = modifier.clickable {
-        onConversationTapped()
-    }.padding(
-        MaterialTheme.spacing.xDp
-    ), verticalAlignment = Alignment.CenterVertically) {
-        SignatureImage(text = "B")
+    Row(
+        modifier = modifier
+            .clickable {
+                onConversationTapped()
+            }
+            .padding(
+                MaterialTheme.spacing.xDp
+            ), verticalAlignment = Alignment.CenterVertically
+    ) {
+        InitialImage(text = "B")
         Spacer(modifier = Modifier.width(MaterialTheme.spacing.xDp))
         Column(
             modifier = Modifier
@@ -60,12 +65,17 @@ fun ConversationItem(
 }
 
 @Composable
-fun SignatureImage(text: String, backgroundColor: Color = Color.Black) {
+fun InitialImage(
+    text: String,
+    size: Dp = MaterialTheme.spacing.x5Dp,
+    backgroundColor: Color = Color.Black,
+    textStyle: TextStyle = MaterialTheme.typography.h2
+) {
     Box(
         contentAlignment = Alignment.Center,
         modifier = Modifier
-            .size(MaterialTheme.spacing.x5Dp)
-            .background(backgroundColor, shape = CircleShape)
+            .size(size = size)
+            .background(backgroundColor, shape = RoundedCornerShape(size))
     ) {
 
         Text(
@@ -77,7 +87,7 @@ fun SignatureImage(text: String, backgroundColor: Color = Color.Black) {
                 .defaultMinSize(
                     MaterialTheme.spacing.mediumLarge
                 ),
-            style = MaterialTheme.typography.h2
+            style = textStyle
         )
     }
 }
