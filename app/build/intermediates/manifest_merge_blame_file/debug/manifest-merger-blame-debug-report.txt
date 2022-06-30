@@ -1,588 +1,167 @@
 1<?xml version="1.0" encoding="utf-8"?>
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-3    package="com.screening.app"
+3    package="com.canbus.app"
 4    android:versionCode="1"
 5    android:versionName="1.0" >
 6
 7    <uses-sdk
 8        android:minSdkVersion="21"
-8-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml
-9        android:targetSdkVersion="31" />
-9-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml
+8-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Canbus/UartSerialCommunication/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="30" />
+9-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Canbus/UartSerialCommunication/app/src/main/AndroidManifest.xml
 10
 11    <uses-permission android:name="android.permission.INTERNET" />
-11-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:6:5-67
-11-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:6:22-64
-12    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
-12-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:7:5-77
-12-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:7:22-74
-13    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
-13-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:8:5-95
-13-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:8:22-92
-14    <uses-permission android:name="android.permission.READ_CONTACTS" />
-14-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:9:5-72
-14-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:9:22-69
-15    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
-15-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:10:5-75
-15-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:10:22-72
-16    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
-16-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:11:5-81
-16-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:11:22-78
-17    <uses-permission android:name="android.permission.ANSWER_PHONE_CALLS" />
-17-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:12:5-77
-17-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:12:22-74
-18    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
-18-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:13:5-81
-18-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:13:22-78
-19    <uses-permission android:name="android.permission.CALL_PHONE" />
-19-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:14:5-69
-19-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:14:22-66
-20    <uses-permission android:name="android.permission.MODIFY_PHONE_STATE" />
-20-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:15:5-17:47
-20-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:16:9-61
-21    <uses-permission android:name="android.permission.ACCESS_MEDIA_LOCATION" />
-21-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:19:5-80
-21-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:19:22-77
-22    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
-22-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:20:5-82
-22-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:20:22-79
-23    <uses-permission android:name="android.permission.READ_CALL_LOG" />
-23-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:21:5-72
-23-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:21:22-69
-24    <uses-permission android:name="android.permission.WRITE_CALL_LOG" />
-24-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:22:5-73
-24-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:22:22-70
-25    <uses-permission android:name="android.permission.CALL_PRIVILEGED" />
-25-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:24:5-26:47
-25-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:25:9-58
-26    <uses-permission
-26-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:27:5-29:38
-27        android:name="android.permission.READ_EXTERNAL_STORAGE"
-27-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:28:9-64
-28        android:maxSdkVersion="29" />
-28-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:29:9-35
-29    <uses-permission
-29-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:27:5-29:38
-30        android:name="android.permission.READ_EXTERNAL_STORAGE"
-30-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:28:9-64
-31        android:maxSdkVersion="29" />
-31-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:29:9-35
-32
-33    <permission android:name="com.screening.app.permission.QUERY_ALL_PACKAGES" />
-33-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:34:17-78
-34
-35    <queries>
-35-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:35:5-39:15
-36        <intent>
-36-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:36:9-38:18
-37            <action android:name="android.intent.action.MAIN" />
-37-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:37:13-65
-37-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:37:21-62
-38        </intent>
-39    </queries>
-40
-41    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-41-->[com.google.firebase:firebase-auth:21.0.1] /Users/muhammadhassan/.gradle/caches/transforms-3/4244c13f31c5b947a753b0b4a0535d25/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:24:5-79
-41-->[com.google.firebase:firebase-auth:21.0.1] /Users/muhammadhassan/.gradle/caches/transforms-3/4244c13f31c5b947a753b0b4a0535d25/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:24:22-76
-42    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create IID tokens -->
-42-->[com.google.firebase:firebase-messaging:23.0.0] /Users/muhammadhassan/.gradle/caches/transforms-3/8fa0134db73e0d06831675ceeed85c82/transformed/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:23:5-68
-42-->[com.google.firebase:firebase-messaging:23.0.0] /Users/muhammadhassan/.gradle/caches/transforms-3/8fa0134db73e0d06831675ceeed85c82/transformed/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:23:22-65
-43    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
-43-->[com.google.firebase:firebase-messaging:23.0.0] /Users/muhammadhassan/.gradle/caches/transforms-3/8fa0134db73e0d06831675ceeed85c82/transformed/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:25:5-82
-43-->[com.google.firebase:firebase-messaging:23.0.0] /Users/muhammadhassan/.gradle/caches/transforms-3/8fa0134db73e0d06831675ceeed85c82/transformed/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:25:22-79
-44    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" /> <!-- Include required permissions for Advertising Id -->
-44-->[com.google.android.gms:play-services-measurement:20.0.2] /Users/muhammadhassan/.gradle/caches/transforms-3/bf1eb97ca9dd43befcf73ede532301b3/transformed/jetified-play-services-measurement-20.0.2/AndroidManifest.xml:26:5-110
-44-->[com.google.android.gms:play-services-measurement:20.0.2] /Users/muhammadhassan/.gradle/caches/transforms-3/bf1eb97ca9dd43befcf73ede532301b3/transformed/jetified-play-services-measurement-20.0.2/AndroidManifest.xml:26:22-107
-45    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
-45-->[com.google.android.gms:play-services-ads-identifier:18.0.0] /Users/muhammadhassan/.gradle/caches/transforms-3/b37a6f7187d2b011ddf2f8f1bb22a3db/transformed/jetified-play-services-ads-identifier-18.0.0/AndroidManifest.xml:23:5-79
-45-->[com.google.android.gms:play-services-ads-identifier:18.0.0] /Users/muhammadhassan/.gradle/caches/transforms-3/b37a6f7187d2b011ddf2f8f1bb22a3db/transformed/jetified-play-services-ads-identifier-18.0.0/AndroidManifest.xml:23:22-76
-46
-47    <application
-47-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:41:5-130:19
-48        android:name="com.screening.app.MyApplication"
-48-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:42:9-55
-49        android:allowBackup="true"
-49-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:43:9-35
-50        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-50-->[androidx.core:core:1.7.0] /Users/muhammadhassan/.gradle/caches/transforms-3/5a144a265c9685934aa4e9b63a2cdbe7/transformed/core-1.7.0/AndroidManifest.xml:24:18-86
-51        android:debuggable="true"
-52        android:icon="@mipmap/ic_launcher"
-52-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:44:9-43
-53        android:label="@string/app_name"
-53-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:45:9-41
-54        android:largeHeap="true"
-54-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:46:9-33
-55        android:requestLegacyExternalStorage="true"
-55-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:47:9-52
-56        android:roundIcon="@mipmap/ic_launcher_round"
-56-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:48:9-54
-57        android:supportsRtl="true"
-57-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:49:9-35
-58        android:testOnly="true"
-59        android:theme="@style/AppTheme"
-59-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:50:9-40
-60        android:usesCleartextTraffic="true" >
-60-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:51:9-44
-61
-62        <!-- <activity -->
-63        <!-- android:name="com.screening.app.ui.activities.MainActivity" -->
-64        <!-- android:exported="true" -->
-65        <!-- android:label="@string/app_name"> -->
-66        <!-- <intent-filter> -->
-67        <!-- <action android:name="android.intent.action.MAIN" /> -->
-68        <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
-69        <!-- </intent-filter> -->
-70        <!-- </activity> -->
-71        <!--  -->
-72        <activity
-72-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:63:9-71:20
-73            android:name="com.screening.app.featureSmsScreening.SmsScreeningActivity"
-73-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:64:13-69
-74            android:exported="true"
-74-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:65:13-36
-75            android:label="@string/app_name" >
-75-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:66:13-45
-76            <intent-filter>
-76-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:67:13-70:29
-77                <action android:name="android.intent.action.MAIN" />
-77-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:37:13-65
-77-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:37:21-62
-78
-79                <category android:name="android.intent.category.LAUNCHER" />
-79-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:69:17-77
-79-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:69:27-74
-80            </intent-filter>
-81        </activity>
-82        <activity
-82-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:73:9-80:20
-83            android:name="com.screening.app.featureSmsScreening.presentation.newMessage.NewMessageActivity"
-83-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:73:19-97
-84            android:exported="true" >
-84-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:74:13-36
-85            <intent-filter>
-85-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:75:13-79:29
-86                <data
-86-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:76:17-78:50
-87                    android:host="newmessage"
-87-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:77:21-46
-88                    android:scheme="screening" />
-88-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:78:21-47
+11-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Canbus/UartSerialCommunication/app/src/main/AndroidManifest.xml:5:5-67
+11-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Canbus/UartSerialCommunication/app/src/main/AndroidManifest.xml:5:22-64
+12    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+12-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Canbus/UartSerialCommunication/app/src/main/AndroidManifest.xml:6:5-95
+12-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Canbus/UartSerialCommunication/app/src/main/AndroidManifest.xml:6:22-92
+13    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+13-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Canbus/UartSerialCommunication/app/src/main/AndroidManifest.xml:7:5-81
+13-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Canbus/UartSerialCommunication/app/src/main/AndroidManifest.xml:7:22-78
+14
+15    <uses-feature
+15-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Canbus/UartSerialCommunication/app/src/main/AndroidManifest.xml:9:5-11:35
+16        android:name="android.hardware.usb.host"
+16-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Canbus/UartSerialCommunication/app/src/main/AndroidManifest.xml:10:9-49
+17        android:required="true" />
+17-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Canbus/UartSerialCommunication/app/src/main/AndroidManifest.xml:11:9-32
+18
+19    <application
+19-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Canbus/UartSerialCommunication/app/src/main/AndroidManifest.xml:13:5-49:19
+20        android:name="com.canbus.app.MyApplication"
+20-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Canbus/UartSerialCommunication/app/src/main/AndroidManifest.xml:14:9-52
+21        android:allowBackup="true"
+21-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Canbus/UartSerialCommunication/app/src/main/AndroidManifest.xml:15:9-35
+22        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+22-->[androidx.core:core:1.7.0] /Users/muhammadhassan/.gradle/caches/transforms-3/af50dd7d164e5df54ac308298ac81c07/transformed/core-1.7.0/AndroidManifest.xml:24:18-86
+23        android:debuggable="true"
+24        android:icon="@mipmap/ic_launcher"
+24-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Canbus/UartSerialCommunication/app/src/main/AndroidManifest.xml:16:9-43
+25        android:label="@string/app_name"
+25-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Canbus/UartSerialCommunication/app/src/main/AndroidManifest.xml:17:9-41
+26        android:largeHeap="true"
+26-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Canbus/UartSerialCommunication/app/src/main/AndroidManifest.xml:18:9-33
+27        android:requestLegacyExternalStorage="true"
+27-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Canbus/UartSerialCommunication/app/src/main/AndroidManifest.xml:19:9-52
+28        android:roundIcon="@mipmap/ic_launcher_round"
+28-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Canbus/UartSerialCommunication/app/src/main/AndroidManifest.xml:20:9-54
+29        android:supportsRtl="true"
+29-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Canbus/UartSerialCommunication/app/src/main/AndroidManifest.xml:21:9-35
+30        android:testOnly="true"
+31        android:theme="@style/AppTheme"
+31-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Canbus/UartSerialCommunication/app/src/main/AndroidManifest.xml:22:9-40
+32        android:usesCleartextTraffic="true" >
+32-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Canbus/UartSerialCommunication/app/src/main/AndroidManifest.xml:23:9-44
+33        <activity
+33-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Canbus/UartSerialCommunication/app/src/main/AndroidManifest.xml:25:9-34:20
+34            android:name="com.canbus.app.featureUartSerial.UsbMainActivity"
+34-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Canbus/UartSerialCommunication/app/src/main/AndroidManifest.xml:26:13-62
+35            android:exported="true"
+35-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Canbus/UartSerialCommunication/app/src/main/AndroidManifest.xml:27:13-36
+36            android:label="@string/app_name" >
+36-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Canbus/UartSerialCommunication/app/src/main/AndroidManifest.xml:28:13-45
+37            <intent-filter>
+37-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Canbus/UartSerialCommunication/app/src/main/AndroidManifest.xml:30:13-33:29
+38                <action android:name="android.intent.action.MAIN" />
+38-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Canbus/UartSerialCommunication/app/src/main/AndroidManifest.xml:31:17-69
+38-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Canbus/UartSerialCommunication/app/src/main/AndroidManifest.xml:31:25-66
+39
+40                <category android:name="android.intent.category.LAUNCHER" />
+40-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Canbus/UartSerialCommunication/app/src/main/AndroidManifest.xml:32:17-77
+40-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Canbus/UartSerialCommunication/app/src/main/AndroidManifest.xml:32:27-74
+41            </intent-filter>
+42        </activity>
+43
+44        <receiver
+44-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Canbus/UartSerialCommunication/app/src/main/AndroidManifest.xml:36:9-43:20
+45            android:name="com.canbus.app.receivers.BootReceiver"
+45-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Canbus/UartSerialCommunication/app/src/main/AndroidManifest.xml:37:13-65
+46            android:exported="true" >
+46-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Canbus/UartSerialCommunication/app/src/main/AndroidManifest.xml:38:13-36
+47            <intent-filter android:priority="999" >
+47-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Canbus/UartSerialCommunication/app/src/main/AndroidManifest.xml:39:13-42:29
+47-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Canbus/UartSerialCommunication/app/src/main/AndroidManifest.xml:39:28-50
+48                <action android:name="android.intent.action.BOOT_COMPLETED" >
+48-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Canbus/UartSerialCommunication/app/src/main/AndroidManifest.xml:40:17-41:26
+48-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Canbus/UartSerialCommunication/app/src/main/AndroidManifest.xml:40:25-76
+49                </action>
+50            </intent-filter>
+51        </receiver>
+52
+53        <service android:name="com.canbus.app.featureUartSerial.presentation.UsbService" />
+53-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Canbus/UartSerialCommunication/app/src/main/AndroidManifest.xml:45:9-78
+53-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Canbus/UartSerialCommunication/app/src/main/AndroidManifest.xml:45:18-75
+54        <service android:name="com.canbus.app.featureUartSerial.data.SerialUsbService" />
+54-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Canbus/UartSerialCommunication/app/src/main/AndroidManifest.xml:46:9-76
+54-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Canbus/UartSerialCommunication/app/src/main/AndroidManifest.xml:46:18-73
+55        <service android:name="com.canbus.app.ui.UsbService" />
+55-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Canbus/UartSerialCommunication/app/src/main/AndroidManifest.xml:47:9-50
+55-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Canbus/UartSerialCommunication/app/src/main/AndroidManifest.xml:47:18-47
+56
+57        <activity
+57-->[androidx.compose.ui:ui-tooling:1.0.5] /Users/muhammadhassan/.gradle/caches/transforms-3/0569bf4958afd945880b8c5f9ddadf2d/transformed/jetified-ui-tooling-1.0.5/AndroidManifest.xml:25:9-27:39
+58            android:name="androidx.compose.ui.tooling.PreviewActivity"
+58-->[androidx.compose.ui:ui-tooling:1.0.5] /Users/muhammadhassan/.gradle/caches/transforms-3/0569bf4958afd945880b8c5f9ddadf2d/transformed/jetified-ui-tooling-1.0.5/AndroidManifest.xml:26:13-71
+59            android:exported="true" />
+59-->[androidx.compose.ui:ui-tooling:1.0.5] /Users/muhammadhassan/.gradle/caches/transforms-3/0569bf4958afd945880b8c5f9ddadf2d/transformed/jetified-ui-tooling-1.0.5/AndroidManifest.xml:27:13-36
+60
+61        <service
+61-->[androidx.room:room-runtime:2.4.0] /Users/muhammadhassan/.gradle/caches/transforms-3/239b1e941a59b015f1641dc36115f621/transformed/room-runtime-2.4.0/AndroidManifest.xml:25:9-28:40
+62            android:name="androidx.room.MultiInstanceInvalidationService"
+62-->[androidx.room:room-runtime:2.4.0] /Users/muhammadhassan/.gradle/caches/transforms-3/239b1e941a59b015f1641dc36115f621/transformed/room-runtime-2.4.0/AndroidManifest.xml:26:13-74
+63            android:directBootAware="true"
+63-->[androidx.room:room-runtime:2.4.0] /Users/muhammadhassan/.gradle/caches/transforms-3/239b1e941a59b015f1641dc36115f621/transformed/room-runtime-2.4.0/AndroidManifest.xml:27:13-43
+64            android:exported="false" />
+64-->[androidx.room:room-runtime:2.4.0] /Users/muhammadhassan/.gradle/caches/transforms-3/239b1e941a59b015f1641dc36115f621/transformed/room-runtime-2.4.0/AndroidManifest.xml:28:13-37
+65
+66        <provider
+66-->[androidx.emoji2:emoji2:1.0.0] /Users/muhammadhassan/.gradle/caches/transforms-3/5f80bfddce00e7b75e3374c692ff2b69/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:26:9-34:20
+67            android:name="androidx.startup.InitializationProvider"
+67-->[androidx.emoji2:emoji2:1.0.0] /Users/muhammadhassan/.gradle/caches/transforms-3/5f80bfddce00e7b75e3374c692ff2b69/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:27:13-67
+68            android:authorities="com.canbus.app.androidx-startup"
+68-->[androidx.emoji2:emoji2:1.0.0] /Users/muhammadhassan/.gradle/caches/transforms-3/5f80bfddce00e7b75e3374c692ff2b69/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:28:13-68
+69            android:exported="false" >
+69-->[androidx.emoji2:emoji2:1.0.0] /Users/muhammadhassan/.gradle/caches/transforms-3/5f80bfddce00e7b75e3374c692ff2b69/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:29:13-37
+70            <meta-data
+70-->[androidx.emoji2:emoji2:1.0.0] /Users/muhammadhassan/.gradle/caches/transforms-3/5f80bfddce00e7b75e3374c692ff2b69/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:31:13-33:52
+71                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+71-->[androidx.emoji2:emoji2:1.0.0] /Users/muhammadhassan/.gradle/caches/transforms-3/5f80bfddce00e7b75e3374c692ff2b69/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:32:17-75
+72                android:value="androidx.startup" />
+72-->[androidx.emoji2:emoji2:1.0.0] /Users/muhammadhassan/.gradle/caches/transforms-3/5f80bfddce00e7b75e3374c692ff2b69/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:33:17-49
+73            <meta-data
+73-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/muhammadhassan/.gradle/caches/transforms-3/236d26dc69f187d9a4e586f97b2156d4/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:31:13-33:52
+74                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+74-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/muhammadhassan/.gradle/caches/transforms-3/236d26dc69f187d9a4e586f97b2156d4/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:32:17-78
+75                android:value="androidx.startup" />
+75-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/muhammadhassan/.gradle/caches/transforms-3/236d26dc69f187d9a4e586f97b2156d4/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:33:17-49
+76            <meta-data
+76-->[androidx.profileinstaller:profileinstaller:1.2.0-alpha02] /Users/muhammadhassan/.gradle/caches/transforms-3/26e4217abefcfb0169592e65e95d7d33/transformed/jetified-profileinstaller-1.2.0-alpha02/AndroidManifest.xml:31:13-33:52
+77                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+77-->[androidx.profileinstaller:profileinstaller:1.2.0-alpha02] /Users/muhammadhassan/.gradle/caches/transforms-3/26e4217abefcfb0169592e65e95d7d33/transformed/jetified-profileinstaller-1.2.0-alpha02/AndroidManifest.xml:32:17-85
+78                android:value="androidx.startup" />
+78-->[androidx.profileinstaller:profileinstaller:1.2.0-alpha02] /Users/muhammadhassan/.gradle/caches/transforms-3/26e4217abefcfb0169592e65e95d7d33/transformed/jetified-profileinstaller-1.2.0-alpha02/AndroidManifest.xml:33:17-49
+79        </provider>
+80
+81        <receiver
+81-->[androidx.profileinstaller:profileinstaller:1.2.0-alpha02] /Users/muhammadhassan/.gradle/caches/transforms-3/26e4217abefcfb0169592e65e95d7d33/transformed/jetified-profileinstaller-1.2.0-alpha02/AndroidManifest.xml:36:9-45:20
+82            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+82-->[androidx.profileinstaller:profileinstaller:1.2.0-alpha02] /Users/muhammadhassan/.gradle/caches/transforms-3/26e4217abefcfb0169592e65e95d7d33/transformed/jetified-profileinstaller-1.2.0-alpha02/AndroidManifest.xml:37:13-76
+83            android:directBootAware="false"
+83-->[androidx.profileinstaller:profileinstaller:1.2.0-alpha02] /Users/muhammadhassan/.gradle/caches/transforms-3/26e4217abefcfb0169592e65e95d7d33/transformed/jetified-profileinstaller-1.2.0-alpha02/AndroidManifest.xml:38:13-44
+84            android:enabled="true"
+84-->[androidx.profileinstaller:profileinstaller:1.2.0-alpha02] /Users/muhammadhassan/.gradle/caches/transforms-3/26e4217abefcfb0169592e65e95d7d33/transformed/jetified-profileinstaller-1.2.0-alpha02/AndroidManifest.xml:39:13-35
+85            android:exported="true"
+85-->[androidx.profileinstaller:profileinstaller:1.2.0-alpha02] /Users/muhammadhassan/.gradle/caches/transforms-3/26e4217abefcfb0169592e65e95d7d33/transformed/jetified-profileinstaller-1.2.0-alpha02/AndroidManifest.xml:40:13-36
+86            android:permission="android.permission.DUMP" >
+86-->[androidx.profileinstaller:profileinstaller:1.2.0-alpha02] /Users/muhammadhassan/.gradle/caches/transforms-3/26e4217abefcfb0169592e65e95d7d33/transformed/jetified-profileinstaller-1.2.0-alpha02/AndroidManifest.xml:41:13-57
+87            <intent-filter>
+87-->[androidx.profileinstaller:profileinstaller:1.2.0-alpha02] /Users/muhammadhassan/.gradle/caches/transforms-3/26e4217abefcfb0169592e65e95d7d33/transformed/jetified-profileinstaller-1.2.0-alpha02/AndroidManifest.xml:42:13-44:29
+88                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+88-->[androidx.profileinstaller:profileinstaller:1.2.0-alpha02] /Users/muhammadhassan/.gradle/caches/transforms-3/26e4217abefcfb0169592e65e95d7d33/transformed/jetified-profileinstaller-1.2.0-alpha02/AndroidManifest.xml:43:17-91
+88-->[androidx.profileinstaller:profileinstaller:1.2.0-alpha02] /Users/muhammadhassan/.gradle/caches/transforms-3/26e4217abefcfb0169592e65e95d7d33/transformed/jetified-profileinstaller-1.2.0-alpha02/AndroidManifest.xml:43:25-88
 89            </intent-filter>
-90        </activity>
-91        <activity android:name="com.screening.app.featureCallScreening.CallScreeningActivity" />
-91-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:82:9-80
-91-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:82:19-77
-92        <activity android:name="com.screening.app.featureImportContacts.ImportContactsActivity" />
-92-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:83:9-82
-92-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:83:19-79
-93
-94        <receiver
-94-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:85:9-98:20
-95            android:name="com.screening.app.receivers.ScreenAppAdminReceiver"
-95-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:86:13-78
-96            android:exported="false"
-96-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:87:13-37
-97            android:permission="android.permission.BIND_DEVICE_ADMIN" >
-97-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:88:13-70
-98            <intent-filter>
-98-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:90:13-93:29
-99                <action android:name="android.app.action.DEVICE_ADMIN_ENABLED" />
-99-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:91:17-82
-99-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:91:25-79
-100                <action android:name="android.app.action.DEVICE_ADMIN_DISABLED" />
-100-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:92:17-83
-100-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:92:25-80
-101            </intent-filter>
-102
-103            <meta-data
-103-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:95:13-97:63
-104                android:name="android.app.device_admin"
-104-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:96:17-56
-105                android:resource="@xml/device_admin_sample" />
-105-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:97:17-60
-106        </receiver>
-107        <receiver
-107-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:100:9-107:20
-108            android:name="com.screening.app.receivers.PhoneCallStateReceiver"
-108-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:101:13-78
-109            android:exported="true" >
-109-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:102:13-36
-110            <intent-filter android:priority="999" >
-110-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:103:13-106:29
-110-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:103:28-50
-111                <action android:name="android.intent.action.NEW_OUTGOING_CALL" />
-111-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:104:17-82
-111-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:104:25-79
-112                <action android:name="android.intent.action.PHONE_STATE" />
-112-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:105:17-76
-112-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:105:25-73
-113            </intent-filter>
-114        </receiver>
-115        <receiver
-115-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:109:9-115:20
-116            android:name="com.screening.app.receivers.BootReceiver"
-116-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:110:13-51
-117            android:exported="true" >
-117-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:111:13-36
-118            <intent-filter android:priority="999" >
-118-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:112:13-114:29
-118-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:112:28-50
-119                <action android:name="android.intent.action.BOOT_COMPLETED" />
-119-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:113:17-79
-119-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:113:25-76
-120            </intent-filter>
-121        </receiver>
-122
-123        <service
-123-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:117:9-128:19
-124            android:name="com.screening.app.accessibility.AppAccessibilityService"
-124-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:118:13-83
-125            android:enabled="true"
-125-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:119:13-35
-126            android:exported="true"
-126-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:120:13-36
-127            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE" >
-127-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:121:13-79
-128            <intent-filter>
-128-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:122:13-124:29
-129                <action android:name="android.accessibilityservice.AccessibilityService" />
-129-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:123:17-92
-129-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:123:25-89
-130            </intent-filter>
-131
-132            <meta-data
-132-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:125:13-127:57
-133                android:name="android.accessibilityservice"
-133-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:126:17-60
-134                android:resource="@xml/accessibility" />
-134-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:127:17-54
-135        </service>
-136
-137        <activity
-137-->[androidx.compose.ui:ui-tooling:1.0.5] /Users/muhammadhassan/.gradle/caches/transforms-3/975194cbf70f20cfffde935a29888e9f/transformed/jetified-ui-tooling-1.0.5/AndroidManifest.xml:25:9-27:39
-138            android:name="androidx.compose.ui.tooling.PreviewActivity"
-138-->[androidx.compose.ui:ui-tooling:1.0.5] /Users/muhammadhassan/.gradle/caches/transforms-3/975194cbf70f20cfffde935a29888e9f/transformed/jetified-ui-tooling-1.0.5/AndroidManifest.xml:26:13-71
-139            android:exported="true" />
-139-->[androidx.compose.ui:ui-tooling:1.0.5] /Users/muhammadhassan/.gradle/caches/transforms-3/975194cbf70f20cfffde935a29888e9f/transformed/jetified-ui-tooling-1.0.5/AndroidManifest.xml:27:13-36
-140        <activity
-140-->[com.google.firebase:firebase-auth:21.0.1] /Users/muhammadhassan/.gradle/caches/transforms-3/4244c13f31c5b947a753b0b4a0535d25/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:27:9-44:20
-141            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
-141-->[com.google.firebase:firebase-auth:21.0.1] /Users/muhammadhassan/.gradle/caches/transforms-3/4244c13f31c5b947a753b0b4a0535d25/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:28:13-80
-142            android:excludeFromRecents="true"
-142-->[com.google.firebase:firebase-auth:21.0.1] /Users/muhammadhassan/.gradle/caches/transforms-3/4244c13f31c5b947a753b0b4a0535d25/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:29:13-46
-143            android:exported="true"
-143-->[com.google.firebase:firebase-auth:21.0.1] /Users/muhammadhassan/.gradle/caches/transforms-3/4244c13f31c5b947a753b0b4a0535d25/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:30:13-36
-144            android:launchMode="singleTask"
-144-->[com.google.firebase:firebase-auth:21.0.1] /Users/muhammadhassan/.gradle/caches/transforms-3/4244c13f31c5b947a753b0b4a0535d25/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:31:13-44
-145            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-145-->[com.google.firebase:firebase-auth:21.0.1] /Users/muhammadhassan/.gradle/caches/transforms-3/4244c13f31c5b947a753b0b4a0535d25/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:32:13-72
-146            <intent-filter>
-146-->[com.google.firebase:firebase-auth:21.0.1] /Users/muhammadhassan/.gradle/caches/transforms-3/4244c13f31c5b947a753b0b4a0535d25/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:33:13-43:29
-147                <action android:name="android.intent.action.VIEW" />
-147-->[com.google.firebase:firebase-auth:21.0.1] /Users/muhammadhassan/.gradle/caches/transforms-3/4244c13f31c5b947a753b0b4a0535d25/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:34:17-69
-147-->[com.google.firebase:firebase-auth:21.0.1] /Users/muhammadhassan/.gradle/caches/transforms-3/4244c13f31c5b947a753b0b4a0535d25/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:34:25-66
-148
-149                <category android:name="android.intent.category.DEFAULT" />
-149-->[com.google.firebase:firebase-auth:21.0.1] /Users/muhammadhassan/.gradle/caches/transforms-3/4244c13f31c5b947a753b0b4a0535d25/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:36:17-76
-149-->[com.google.firebase:firebase-auth:21.0.1] /Users/muhammadhassan/.gradle/caches/transforms-3/4244c13f31c5b947a753b0b4a0535d25/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:36:27-73
-150                <category android:name="android.intent.category.BROWSABLE" />
-150-->[com.google.firebase:firebase-auth:21.0.1] /Users/muhammadhassan/.gradle/caches/transforms-3/4244c13f31c5b947a753b0b4a0535d25/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:37:17-78
-150-->[com.google.firebase:firebase-auth:21.0.1] /Users/muhammadhassan/.gradle/caches/transforms-3/4244c13f31c5b947a753b0b4a0535d25/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:37:27-75
-151
-152                <data
-152-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:76:17-78:50
-153                    android:host="firebase.auth"
-153-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:77:21-46
-154                    android:path="/"
-155                    android:scheme="genericidp" />
-155-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:78:21-47
-156            </intent-filter>
-157        </activity>
-158        <activity
-158-->[com.google.firebase:firebase-auth:21.0.1] /Users/muhammadhassan/.gradle/caches/transforms-3/4244c13f31c5b947a753b0b4a0535d25/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:45:9-62:20
-159            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
-159-->[com.google.firebase:firebase-auth:21.0.1] /Users/muhammadhassan/.gradle/caches/transforms-3/4244c13f31c5b947a753b0b4a0535d25/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:46:13-79
-160            android:excludeFromRecents="true"
-160-->[com.google.firebase:firebase-auth:21.0.1] /Users/muhammadhassan/.gradle/caches/transforms-3/4244c13f31c5b947a753b0b4a0535d25/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:47:13-46
-161            android:exported="true"
-161-->[com.google.firebase:firebase-auth:21.0.1] /Users/muhammadhassan/.gradle/caches/transforms-3/4244c13f31c5b947a753b0b4a0535d25/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:48:13-36
-162            android:launchMode="singleTask"
-162-->[com.google.firebase:firebase-auth:21.0.1] /Users/muhammadhassan/.gradle/caches/transforms-3/4244c13f31c5b947a753b0b4a0535d25/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:49:13-44
-163            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-163-->[com.google.firebase:firebase-auth:21.0.1] /Users/muhammadhassan/.gradle/caches/transforms-3/4244c13f31c5b947a753b0b4a0535d25/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:50:13-72
-164            <intent-filter>
-164-->[com.google.firebase:firebase-auth:21.0.1] /Users/muhammadhassan/.gradle/caches/transforms-3/4244c13f31c5b947a753b0b4a0535d25/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:51:13-61:29
-165                <action android:name="android.intent.action.VIEW" />
-165-->[com.google.firebase:firebase-auth:21.0.1] /Users/muhammadhassan/.gradle/caches/transforms-3/4244c13f31c5b947a753b0b4a0535d25/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:34:17-69
-165-->[com.google.firebase:firebase-auth:21.0.1] /Users/muhammadhassan/.gradle/caches/transforms-3/4244c13f31c5b947a753b0b4a0535d25/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:34:25-66
-166
-167                <category android:name="android.intent.category.DEFAULT" />
-167-->[com.google.firebase:firebase-auth:21.0.1] /Users/muhammadhassan/.gradle/caches/transforms-3/4244c13f31c5b947a753b0b4a0535d25/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:36:17-76
-167-->[com.google.firebase:firebase-auth:21.0.1] /Users/muhammadhassan/.gradle/caches/transforms-3/4244c13f31c5b947a753b0b4a0535d25/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:36:27-73
-168                <category android:name="android.intent.category.BROWSABLE" />
-168-->[com.google.firebase:firebase-auth:21.0.1] /Users/muhammadhassan/.gradle/caches/transforms-3/4244c13f31c5b947a753b0b4a0535d25/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:37:17-78
-168-->[com.google.firebase:firebase-auth:21.0.1] /Users/muhammadhassan/.gradle/caches/transforms-3/4244c13f31c5b947a753b0b4a0535d25/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:37:27-75
-169
-170                <data
-170-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:76:17-78:50
-171                    android:host="firebase.auth"
-171-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:77:21-46
-172                    android:path="/"
-173                    android:scheme="recaptcha" />
-173-->/Users/muhammadhassan/Desktop/Home/Android/Projects/Call-Sms-Screening/app/src/main/AndroidManifest.xml:78:21-47
-174            </intent-filter>
-175        </activity>
-176
-177        <service
-177-->[com.google.firebase:firebase-auth:21.0.1] /Users/muhammadhassan/.gradle/caches/transforms-3/4244c13f31c5b947a753b0b4a0535d25/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:64:9-73:19
-178            android:name="com.google.firebase.auth.api.fallback.service.FirebaseAuthFallbackService"
-178-->[com.google.firebase:firebase-auth:21.0.1] /Users/muhammadhassan/.gradle/caches/transforms-3/4244c13f31c5b947a753b0b4a0535d25/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:65:13-101
-179            android:enabled="true"
-179-->[com.google.firebase:firebase-auth:21.0.1] /Users/muhammadhassan/.gradle/caches/transforms-3/4244c13f31c5b947a753b0b4a0535d25/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:66:13-35
-180            android:exported="false" >
-180-->[com.google.firebase:firebase-auth:21.0.1] /Users/muhammadhassan/.gradle/caches/transforms-3/4244c13f31c5b947a753b0b4a0535d25/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:67:13-37
-181            <intent-filter>
-181-->[com.google.firebase:firebase-auth:21.0.1] /Users/muhammadhassan/.gradle/caches/transforms-3/4244c13f31c5b947a753b0b4a0535d25/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:68:13-72:29
-182                <action android:name="com.google.firebase.auth.api.gms.service.START" />
-182-->[com.google.firebase:firebase-auth:21.0.1] /Users/muhammadhassan/.gradle/caches/transforms-3/4244c13f31c5b947a753b0b4a0535d25/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:69:17-89
-182-->[com.google.firebase:firebase-auth:21.0.1] /Users/muhammadhassan/.gradle/caches/transforms-3/4244c13f31c5b947a753b0b4a0535d25/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:69:25-86
-183
-184                <category android:name="android.intent.category.DEFAULT" />
-184-->[com.google.firebase:firebase-auth:21.0.1] /Users/muhammadhassan/.gradle/caches/transforms-3/4244c13f31c5b947a753b0b4a0535d25/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:36:17-76
-184-->[com.google.firebase:firebase-auth:21.0.1] /Users/muhammadhassan/.gradle/caches/transforms-3/4244c13f31c5b947a753b0b4a0535d25/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:36:27-73
-185            </intent-filter>
-186        </service>
-187        <service
-187-->[com.google.firebase:firebase-auth:21.0.1] /Users/muhammadhassan/.gradle/caches/transforms-3/4244c13f31c5b947a753b0b4a0535d25/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:74:9-80:19
-188            android:name="com.google.firebase.components.ComponentDiscoveryService"
-188-->[com.google.firebase:firebase-auth:21.0.1] /Users/muhammadhassan/.gradle/caches/transforms-3/4244c13f31c5b947a753b0b4a0535d25/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:75:13-84
-189            android:directBootAware="true"
-189-->[com.google.firebase:firebase-common:20.0.0] /Users/muhammadhassan/.gradle/caches/transforms-3/7e5a475220fa74ae3b7ec9da3ffe6b32/transformed/jetified-firebase-common-20.0.0/AndroidManifest.xml:35:13-43
-190            android:exported="false" >
-190-->[com.google.firebase:firebase-auth:21.0.1] /Users/muhammadhassan/.gradle/caches/transforms-3/4244c13f31c5b947a753b0b4a0535d25/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:76:13-37
-191            <meta-data
-191-->[com.google.firebase:firebase-auth:21.0.1] /Users/muhammadhassan/.gradle/caches/transforms-3/4244c13f31c5b947a753b0b4a0535d25/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:77:13-79:85
-192                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
-192-->[com.google.firebase:firebase-auth:21.0.1] /Users/muhammadhassan/.gradle/caches/transforms-3/4244c13f31c5b947a753b0b4a0535d25/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:78:17-109
-193                android:value="com.google.firebase.components.ComponentRegistrar" />
-193-->[com.google.firebase:firebase-auth:21.0.1] /Users/muhammadhassan/.gradle/caches/transforms-3/4244c13f31c5b947a753b0b4a0535d25/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:79:17-82
-194            <meta-data
-194-->[com.google.firebase:firebase-firestore:24.0.1] /Users/muhammadhassan/.gradle/caches/transforms-3/e04e80dd753df0534806cdeba17c26d7/transformed/jetified-firebase-firestore-24.0.1/AndroidManifest.xml:20:13-22:85
-195                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
-195-->[com.google.firebase:firebase-firestore:24.0.1] /Users/muhammadhassan/.gradle/caches/transforms-3/e04e80dd753df0534806cdeba17c26d7/transformed/jetified-firebase-firestore-24.0.1/AndroidManifest.xml:21:17-111
-196                android:value="com.google.firebase.components.ComponentRegistrar" />
-196-->[com.google.firebase:firebase-firestore:24.0.1] /Users/muhammadhassan/.gradle/caches/transforms-3/e04e80dd753df0534806cdeba17c26d7/transformed/jetified-firebase-firestore-24.0.1/AndroidManifest.xml:22:17-82
-197            <meta-data
-197-->[com.google.firebase:firebase-messaging:23.0.0] /Users/muhammadhassan/.gradle/caches/transforms-3/8fa0134db73e0d06831675ceeed85c82/transformed/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:52:13-54:85
-198                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
-198-->[com.google.firebase:firebase-messaging:23.0.0] /Users/muhammadhassan/.gradle/caches/transforms-3/8fa0134db73e0d06831675ceeed85c82/transformed/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:53:17-119
-199                android:value="com.google.firebase.components.ComponentRegistrar" />
-199-->[com.google.firebase:firebase-messaging:23.0.0] /Users/muhammadhassan/.gradle/caches/transforms-3/8fa0134db73e0d06831675ceeed85c82/transformed/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:54:17-82
-200            <meta-data
-200-->[com.google.firebase:firebase-crashlytics:18.2.6] /Users/muhammadhassan/.gradle/caches/transforms-3/774df27330d14c050921fa2dfd0c8c41/transformed/jetified-firebase-crashlytics-18.2.6/AndroidManifest.xml:18:13-20:85
-201                android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar"
-201-->[com.google.firebase:firebase-crashlytics:18.2.6] /Users/muhammadhassan/.gradle/caches/transforms-3/774df27330d14c050921fa2dfd0c8c41/transformed/jetified-firebase-crashlytics-18.2.6/AndroidManifest.xml:19:17-115
-202                android:value="com.google.firebase.components.ComponentRegistrar" />
-202-->[com.google.firebase:firebase-crashlytics:18.2.6] /Users/muhammadhassan/.gradle/caches/transforms-3/774df27330d14c050921fa2dfd0c8c41/transformed/jetified-firebase-crashlytics-18.2.6/AndroidManifest.xml:20:17-82
-203            <meta-data
-203-->[com.google.android.gms:play-services-measurement-api:20.0.2] /Users/muhammadhassan/.gradle/caches/transforms-3/4df8da1c9effe4464ca5942800bc9ac2/transformed/jetified-play-services-measurement-api-20.0.2/AndroidManifest.xml:30:13-32:85
-204                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
-204-->[com.google.android.gms:play-services-measurement-api:20.0.2] /Users/muhammadhassan/.gradle/caches/transforms-3/4df8da1c9effe4464ca5942800bc9ac2/transformed/jetified-play-services-measurement-api-20.0.2/AndroidManifest.xml:31:17-139
-205                android:value="com.google.firebase.components.ComponentRegistrar" />
-205-->[com.google.android.gms:play-services-measurement-api:20.0.2] /Users/muhammadhassan/.gradle/caches/transforms-3/4df8da1c9effe4464ca5942800bc9ac2/transformed/jetified-play-services-measurement-api-20.0.2/AndroidManifest.xml:32:17-82
-206            <meta-data
-206-->[com.google.firebase:firebase-installations:17.0.0] /Users/muhammadhassan/.gradle/caches/transforms-3/baa20a152d227cc627cb61383e2bd808/transformed/jetified-firebase-installations-17.0.0/AndroidManifest.xml:18:13-20:85
-207                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
-207-->[com.google.firebase:firebase-installations:17.0.0] /Users/muhammadhassan/.gradle/caches/transforms-3/baa20a152d227cc627cb61383e2bd808/transformed/jetified-firebase-installations-17.0.0/AndroidManifest.xml:19:17-127
-208                android:value="com.google.firebase.components.ComponentRegistrar" />
-208-->[com.google.firebase:firebase-installations:17.0.0] /Users/muhammadhassan/.gradle/caches/transforms-3/baa20a152d227cc627cb61383e2bd808/transformed/jetified-firebase-installations-17.0.0/AndroidManifest.xml:20:17-82
-209            <meta-data
-209-->[com.google.firebase:firebase-datatransport:18.0.0] /Users/muhammadhassan/.gradle/caches/transforms-3/b9b8f210f6013c04855180c9d778be94/transformed/jetified-firebase-datatransport-18.0.0/AndroidManifest.xml:28:13-30:85
-210                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
-210-->[com.google.firebase:firebase-datatransport:18.0.0] /Users/muhammadhassan/.gradle/caches/transforms-3/b9b8f210f6013c04855180c9d778be94/transformed/jetified-firebase-datatransport-18.0.0/AndroidManifest.xml:29:17-115
-211                android:value="com.google.firebase.components.ComponentRegistrar" />
-211-->[com.google.firebase:firebase-datatransport:18.0.0] /Users/muhammadhassan/.gradle/caches/transforms-3/b9b8f210f6013c04855180c9d778be94/transformed/jetified-firebase-datatransport-18.0.0/AndroidManifest.xml:30:17-82
-212        </service>
-213
-214        <activity
-214-->[com.google.android.gms:play-services-base:17.1.0] /Users/muhammadhassan/.gradle/caches/transforms-3/50f9be907253b86a29625dced8d0ddd7/transformed/jetified-play-services-base-17.1.0/AndroidManifest.xml:23:9-26:75
-215            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-215-->[com.google.android.gms:play-services-base:17.1.0] /Users/muhammadhassan/.gradle/caches/transforms-3/50f9be907253b86a29625dced8d0ddd7/transformed/jetified-play-services-base-17.1.0/AndroidManifest.xml:24:13-79
-216            android:exported="false"
-216-->[com.google.android.gms:play-services-base:17.1.0] /Users/muhammadhassan/.gradle/caches/transforms-3/50f9be907253b86a29625dced8d0ddd7/transformed/jetified-play-services-base-17.1.0/AndroidManifest.xml:25:13-37
-217            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-217-->[com.google.android.gms:play-services-base:17.1.0] /Users/muhammadhassan/.gradle/caches/transforms-3/50f9be907253b86a29625dced8d0ddd7/transformed/jetified-play-services-base-17.1.0/AndroidManifest.xml:26:13-72
-218
-219        <receiver
-219-->[com.google.firebase:firebase-messaging:23.0.0] /Users/muhammadhassan/.gradle/caches/transforms-3/8fa0134db73e0d06831675ceeed85c82/transformed/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:28:9-35:20
-220            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
-220-->[com.google.firebase:firebase-messaging:23.0.0] /Users/muhammadhassan/.gradle/caches/transforms-3/8fa0134db73e0d06831675ceeed85c82/transformed/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:29:13-78
-221            android:exported="true"
-221-->[com.google.firebase:firebase-messaging:23.0.0] /Users/muhammadhassan/.gradle/caches/transforms-3/8fa0134db73e0d06831675ceeed85c82/transformed/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:30:13-36
-222            android:permission="com.google.android.c2dm.permission.SEND" >
-222-->[com.google.firebase:firebase-messaging:23.0.0] /Users/muhammadhassan/.gradle/caches/transforms-3/8fa0134db73e0d06831675ceeed85c82/transformed/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:31:13-73
-223            <intent-filter>
-223-->[com.google.firebase:firebase-messaging:23.0.0] /Users/muhammadhassan/.gradle/caches/transforms-3/8fa0134db73e0d06831675ceeed85c82/transformed/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:32:13-34:29
-224                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-224-->[com.google.firebase:firebase-messaging:23.0.0] /Users/muhammadhassan/.gradle/caches/transforms-3/8fa0134db73e0d06831675ceeed85c82/transformed/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:33:17-81
-224-->[com.google.firebase:firebase-messaging:23.0.0] /Users/muhammadhassan/.gradle/caches/transforms-3/8fa0134db73e0d06831675ceeed85c82/transformed/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:33:25-78
-225            </intent-filter>
-226        </receiver>
-227        <!--
-228             FirebaseMessagingService performs security checks at runtime,
-229             but set to not exported to explicitly avoid allowing another app to call it.
-230        -->
-231        <service
-231-->[com.google.firebase:firebase-messaging:23.0.0] /Users/muhammadhassan/.gradle/caches/transforms-3/8fa0134db73e0d06831675ceeed85c82/transformed/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:41:9-48:19
-232            android:name="com.google.firebase.messaging.FirebaseMessagingService"
-232-->[com.google.firebase:firebase-messaging:23.0.0] /Users/muhammadhassan/.gradle/caches/transforms-3/8fa0134db73e0d06831675ceeed85c82/transformed/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:42:13-82
-233            android:directBootAware="true"
-233-->[com.google.firebase:firebase-messaging:23.0.0] /Users/muhammadhassan/.gradle/caches/transforms-3/8fa0134db73e0d06831675ceeed85c82/transformed/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:43:13-43
-234            android:exported="false" >
-234-->[com.google.firebase:firebase-messaging:23.0.0] /Users/muhammadhassan/.gradle/caches/transforms-3/8fa0134db73e0d06831675ceeed85c82/transformed/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:44:13-37
-235            <intent-filter android:priority="-500" >
-235-->[com.google.firebase:firebase-messaging:23.0.0] /Users/muhammadhassan/.gradle/caches/transforms-3/8fa0134db73e0d06831675ceeed85c82/transformed/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:45:13-47:29
-235-->[com.google.firebase:firebase-messaging:23.0.0] /Users/muhammadhassan/.gradle/caches/transforms-3/8fa0134db73e0d06831675ceeed85c82/transformed/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:45:28-51
-236                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-236-->[com.google.firebase:firebase-messaging:23.0.0] /Users/muhammadhassan/.gradle/caches/transforms-3/8fa0134db73e0d06831675ceeed85c82/transformed/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:46:17-78
-236-->[com.google.firebase:firebase-messaging:23.0.0] /Users/muhammadhassan/.gradle/caches/transforms-3/8fa0134db73e0d06831675ceeed85c82/transformed/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:46:25-75
-237            </intent-filter>
-238        </service>
-239
-240        <provider
-240-->[com.google.firebase:firebase-common:20.0.0] /Users/muhammadhassan/.gradle/caches/transforms-3/7e5a475220fa74ae3b7ec9da3ffe6b32/transformed/jetified-firebase-common-20.0.0/AndroidManifest.xml:26:9-31:39
-241            android:name="com.google.firebase.provider.FirebaseInitProvider"
-241-->[com.google.firebase:firebase-common:20.0.0] /Users/muhammadhassan/.gradle/caches/transforms-3/7e5a475220fa74ae3b7ec9da3ffe6b32/transformed/jetified-firebase-common-20.0.0/AndroidManifest.xml:27:13-77
-242            android:authorities="com.screening.app.firebaseinitprovider"
-242-->[com.google.firebase:firebase-common:20.0.0] /Users/muhammadhassan/.gradle/caches/transforms-3/7e5a475220fa74ae3b7ec9da3ffe6b32/transformed/jetified-firebase-common-20.0.0/AndroidManifest.xml:28:13-72
-243            android:directBootAware="true"
-243-->[com.google.firebase:firebase-common:20.0.0] /Users/muhammadhassan/.gradle/caches/transforms-3/7e5a475220fa74ae3b7ec9da3ffe6b32/transformed/jetified-firebase-common-20.0.0/AndroidManifest.xml:29:13-43
-244            android:exported="false"
-244-->[com.google.firebase:firebase-common:20.0.0] /Users/muhammadhassan/.gradle/caches/transforms-3/7e5a475220fa74ae3b7ec9da3ffe6b32/transformed/jetified-firebase-common-20.0.0/AndroidManifest.xml:30:13-37
-245            android:initOrder="100" />
-245-->[com.google.firebase:firebase-common:20.0.0] /Users/muhammadhassan/.gradle/caches/transforms-3/7e5a475220fa74ae3b7ec9da3ffe6b32/transformed/jetified-firebase-common-20.0.0/AndroidManifest.xml:31:13-36
-246
-247        <receiver
-247-->[com.google.android.gms:play-services-measurement:20.0.2] /Users/muhammadhassan/.gradle/caches/transforms-3/bf1eb97ca9dd43befcf73ede532301b3/transformed/jetified-play-services-measurement-20.0.2/AndroidManifest.xml:29:9-33:20
-248            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
-248-->[com.google.android.gms:play-services-measurement:20.0.2] /Users/muhammadhassan/.gradle/caches/transforms-3/bf1eb97ca9dd43befcf73ede532301b3/transformed/jetified-play-services-measurement-20.0.2/AndroidManifest.xml:30:13-85
-249            android:enabled="true"
-249-->[com.google.android.gms:play-services-measurement:20.0.2] /Users/muhammadhassan/.gradle/caches/transforms-3/bf1eb97ca9dd43befcf73ede532301b3/transformed/jetified-play-services-measurement-20.0.2/AndroidManifest.xml:31:13-35
-250            android:exported="false" >
-250-->[com.google.android.gms:play-services-measurement:20.0.2] /Users/muhammadhassan/.gradle/caches/transforms-3/bf1eb97ca9dd43befcf73ede532301b3/transformed/jetified-play-services-measurement-20.0.2/AndroidManifest.xml:32:13-37
-251        </receiver>
-252
-253        <service
-253-->[com.google.android.gms:play-services-measurement:20.0.2] /Users/muhammadhassan/.gradle/caches/transforms-3/bf1eb97ca9dd43befcf73ede532301b3/transformed/jetified-play-services-measurement-20.0.2/AndroidManifest.xml:35:9-38:40
-254            android:name="com.google.android.gms.measurement.AppMeasurementService"
-254-->[com.google.android.gms:play-services-measurement:20.0.2] /Users/muhammadhassan/.gradle/caches/transforms-3/bf1eb97ca9dd43befcf73ede532301b3/transformed/jetified-play-services-measurement-20.0.2/AndroidManifest.xml:36:13-84
-255            android:enabled="true"
-255-->[com.google.android.gms:play-services-measurement:20.0.2] /Users/muhammadhassan/.gradle/caches/transforms-3/bf1eb97ca9dd43befcf73ede532301b3/transformed/jetified-play-services-measurement-20.0.2/AndroidManifest.xml:37:13-35
-256            android:exported="false" />
-256-->[com.google.android.gms:play-services-measurement:20.0.2] /Users/muhammadhassan/.gradle/caches/transforms-3/bf1eb97ca9dd43befcf73ede532301b3/transformed/jetified-play-services-measurement-20.0.2/AndroidManifest.xml:38:13-37
-257        <service
-257-->[com.google.android.gms:play-services-measurement:20.0.2] /Users/muhammadhassan/.gradle/caches/transforms-3/bf1eb97ca9dd43befcf73ede532301b3/transformed/jetified-play-services-measurement-20.0.2/AndroidManifest.xml:39:9-43:72
-258            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
-258-->[com.google.android.gms:play-services-measurement:20.0.2] /Users/muhammadhassan/.gradle/caches/transforms-3/bf1eb97ca9dd43befcf73ede532301b3/transformed/jetified-play-services-measurement-20.0.2/AndroidManifest.xml:40:13-87
-259            android:enabled="true"
-259-->[com.google.android.gms:play-services-measurement:20.0.2] /Users/muhammadhassan/.gradle/caches/transforms-3/bf1eb97ca9dd43befcf73ede532301b3/transformed/jetified-play-services-measurement-20.0.2/AndroidManifest.xml:41:13-35
-260            android:exported="false"
-260-->[com.google.android.gms:play-services-measurement:20.0.2] /Users/muhammadhassan/.gradle/caches/transforms-3/bf1eb97ca9dd43befcf73ede532301b3/transformed/jetified-play-services-measurement-20.0.2/AndroidManifest.xml:42:13-37
-261            android:permission="android.permission.BIND_JOB_SERVICE" />
-261-->[com.google.android.gms:play-services-measurement:20.0.2] /Users/muhammadhassan/.gradle/caches/transforms-3/bf1eb97ca9dd43befcf73ede532301b3/transformed/jetified-play-services-measurement-20.0.2/AndroidManifest.xml:43:13-69
-262
-263        <meta-data
-263-->[com.google.android.gms:play-services-basement:18.0.0] /Users/muhammadhassan/.gradle/caches/transforms-3/e476ee8e3d303bd9759491a63c157c7d/transformed/jetified-play-services-basement-18.0.0/AndroidManifest.xml:21:9-23:69
-264            android:name="com.google.android.gms.version"
-264-->[com.google.android.gms:play-services-basement:18.0.0] /Users/muhammadhassan/.gradle/caches/transforms-3/e476ee8e3d303bd9759491a63c157c7d/transformed/jetified-play-services-basement-18.0.0/AndroidManifest.xml:22:13-58
-265            android:value="@integer/google_play_services_version" />
-265-->[com.google.android.gms:play-services-basement:18.0.0] /Users/muhammadhassan/.gradle/caches/transforms-3/e476ee8e3d303bd9759491a63c157c7d/transformed/jetified-play-services-basement-18.0.0/AndroidManifest.xml:23:13-66
-266
-267        <service
-267-->[androidx.room:room-runtime:2.4.0] /Users/muhammadhassan/.gradle/caches/transforms-3/697cbd2120c2cdbe7adc7c92a5293ae3/transformed/room-runtime-2.4.0/AndroidManifest.xml:25:9-28:40
-268            android:name="androidx.room.MultiInstanceInvalidationService"
-268-->[androidx.room:room-runtime:2.4.0] /Users/muhammadhassan/.gradle/caches/transforms-3/697cbd2120c2cdbe7adc7c92a5293ae3/transformed/room-runtime-2.4.0/AndroidManifest.xml:26:13-74
-269            android:directBootAware="true"
-269-->[androidx.room:room-runtime:2.4.0] /Users/muhammadhassan/.gradle/caches/transforms-3/697cbd2120c2cdbe7adc7c92a5293ae3/transformed/room-runtime-2.4.0/AndroidManifest.xml:27:13-43
-270            android:exported="false" />
-270-->[androidx.room:room-runtime:2.4.0] /Users/muhammadhassan/.gradle/caches/transforms-3/697cbd2120c2cdbe7adc7c92a5293ae3/transformed/room-runtime-2.4.0/AndroidManifest.xml:28:13-37
-271
-272        <provider
-272-->[androidx.emoji2:emoji2:1.0.0] /Users/muhammadhassan/.gradle/caches/transforms-3/6ebb4f5f95c32247974a8198d77ee1a3/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:26:9-34:20
-273            android:name="androidx.startup.InitializationProvider"
-273-->[androidx.emoji2:emoji2:1.0.0] /Users/muhammadhassan/.gradle/caches/transforms-3/6ebb4f5f95c32247974a8198d77ee1a3/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:27:13-67
-274            android:authorities="com.screening.app.androidx-startup"
-274-->[androidx.emoji2:emoji2:1.0.0] /Users/muhammadhassan/.gradle/caches/transforms-3/6ebb4f5f95c32247974a8198d77ee1a3/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:28:13-68
-275            android:exported="false" >
-275-->[androidx.emoji2:emoji2:1.0.0] /Users/muhammadhassan/.gradle/caches/transforms-3/6ebb4f5f95c32247974a8198d77ee1a3/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:29:13-37
-276            <meta-data
-276-->[androidx.emoji2:emoji2:1.0.0] /Users/muhammadhassan/.gradle/caches/transforms-3/6ebb4f5f95c32247974a8198d77ee1a3/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:31:13-33:52
-277                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-277-->[androidx.emoji2:emoji2:1.0.0] /Users/muhammadhassan/.gradle/caches/transforms-3/6ebb4f5f95c32247974a8198d77ee1a3/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:32:17-75
-278                android:value="androidx.startup" />
-278-->[androidx.emoji2:emoji2:1.0.0] /Users/muhammadhassan/.gradle/caches/transforms-3/6ebb4f5f95c32247974a8198d77ee1a3/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:33:17-49
-279            <meta-data
-279-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/muhammadhassan/.gradle/caches/transforms-3/71a36766dfeb416dff2437cdcf25c864/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:31:13-33:52
-280                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-280-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/muhammadhassan/.gradle/caches/transforms-3/71a36766dfeb416dff2437cdcf25c864/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:32:17-78
-281                android:value="androidx.startup" />
-281-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/muhammadhassan/.gradle/caches/transforms-3/71a36766dfeb416dff2437cdcf25c864/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:33:17-49
-282            <meta-data
-282-->[androidx.profileinstaller:profileinstaller:1.2.0-alpha02] /Users/muhammadhassan/.gradle/caches/transforms-3/f12635da04cbe9aa22a214db6c756580/transformed/jetified-profileinstaller-1.2.0-alpha02/AndroidManifest.xml:31:13-33:52
-283                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-283-->[androidx.profileinstaller:profileinstaller:1.2.0-alpha02] /Users/muhammadhassan/.gradle/caches/transforms-3/f12635da04cbe9aa22a214db6c756580/transformed/jetified-profileinstaller-1.2.0-alpha02/AndroidManifest.xml:32:17-85
-284                android:value="androidx.startup" />
-284-->[androidx.profileinstaller:profileinstaller:1.2.0-alpha02] /Users/muhammadhassan/.gradle/caches/transforms-3/f12635da04cbe9aa22a214db6c756580/transformed/jetified-profileinstaller-1.2.0-alpha02/AndroidManifest.xml:33:17-49
-285        </provider>
-286
-287        <service
-287-->[com.google.android.datatransport:transport-backend-cct:3.1.0] /Users/muhammadhassan/.gradle/caches/transforms-3/2bd1f12343ba2c7e156becd9929071bb/transformed/jetified-transport-backend-cct-3.1.0/AndroidManifest.xml:29:9-35:19
-288            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
-288-->[com.google.android.datatransport:transport-backend-cct:3.1.0] /Users/muhammadhassan/.gradle/caches/transforms-3/2bd1f12343ba2c7e156becd9929071bb/transformed/jetified-transport-backend-cct-3.1.0/AndroidManifest.xml:30:13-103
-289            android:exported="false" >
-289-->[com.google.android.datatransport:transport-backend-cct:3.1.0] /Users/muhammadhassan/.gradle/caches/transforms-3/2bd1f12343ba2c7e156becd9929071bb/transformed/jetified-transport-backend-cct-3.1.0/AndroidManifest.xml:31:13-37
-290            <meta-data
-290-->[com.google.android.datatransport:transport-backend-cct:3.1.0] /Users/muhammadhassan/.gradle/caches/transforms-3/2bd1f12343ba2c7e156becd9929071bb/transformed/jetified-transport-backend-cct-3.1.0/AndroidManifest.xml:32:13-34:39
-291                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
-291-->[com.google.android.datatransport:transport-backend-cct:3.1.0] /Users/muhammadhassan/.gradle/caches/transforms-3/2bd1f12343ba2c7e156becd9929071bb/transformed/jetified-transport-backend-cct-3.1.0/AndroidManifest.xml:33:17-94
-292                android:value="cct" />
-292-->[com.google.android.datatransport:transport-backend-cct:3.1.0] /Users/muhammadhassan/.gradle/caches/transforms-3/2bd1f12343ba2c7e156becd9929071bb/transformed/jetified-transport-backend-cct-3.1.0/AndroidManifest.xml:34:17-36
-293        </service>
-294        <service
-294-->[com.google.android.datatransport:transport-runtime:3.1.0] /Users/muhammadhassan/.gradle/caches/transforms-3/55b2d8525387b75ddc336bb690cae13c/transformed/jetified-transport-runtime-3.1.0/AndroidManifest.xml:26:9-30:19
-295            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
-295-->[com.google.android.datatransport:transport-runtime:3.1.0] /Users/muhammadhassan/.gradle/caches/transforms-3/55b2d8525387b75ddc336bb690cae13c/transformed/jetified-transport-runtime-3.1.0/AndroidManifest.xml:27:13-117
-296            android:exported="false"
-296-->[com.google.android.datatransport:transport-runtime:3.1.0] /Users/muhammadhassan/.gradle/caches/transforms-3/55b2d8525387b75ddc336bb690cae13c/transformed/jetified-transport-runtime-3.1.0/AndroidManifest.xml:28:13-37
-297            android:permission="android.permission.BIND_JOB_SERVICE" >
-297-->[com.google.android.datatransport:transport-runtime:3.1.0] /Users/muhammadhassan/.gradle/caches/transforms-3/55b2d8525387b75ddc336bb690cae13c/transformed/jetified-transport-runtime-3.1.0/AndroidManifest.xml:29:13-69
-298        </service>
-299
-300        <receiver
-300-->[com.google.android.datatransport:transport-runtime:3.1.0] /Users/muhammadhassan/.gradle/caches/transforms-3/55b2d8525387b75ddc336bb690cae13c/transformed/jetified-transport-runtime-3.1.0/AndroidManifest.xml:32:9-34:40
-301            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
-301-->[com.google.android.datatransport:transport-runtime:3.1.0] /Users/muhammadhassan/.gradle/caches/transforms-3/55b2d8525387b75ddc336bb690cae13c/transformed/jetified-transport-runtime-3.1.0/AndroidManifest.xml:33:13-132
-302            android:exported="false" />
-302-->[com.google.android.datatransport:transport-runtime:3.1.0] /Users/muhammadhassan/.gradle/caches/transforms-3/55b2d8525387b75ddc336bb690cae13c/transformed/jetified-transport-runtime-3.1.0/AndroidManifest.xml:34:13-37
-303        <receiver
-303-->[androidx.profileinstaller:profileinstaller:1.2.0-alpha02] /Users/muhammadhassan/.gradle/caches/transforms-3/f12635da04cbe9aa22a214db6c756580/transformed/jetified-profileinstaller-1.2.0-alpha02/AndroidManifest.xml:36:9-45:20
-304            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-304-->[androidx.profileinstaller:profileinstaller:1.2.0-alpha02] /Users/muhammadhassan/.gradle/caches/transforms-3/f12635da04cbe9aa22a214db6c756580/transformed/jetified-profileinstaller-1.2.0-alpha02/AndroidManifest.xml:37:13-76
-305            android:directBootAware="false"
-305-->[androidx.profileinstaller:profileinstaller:1.2.0-alpha02] /Users/muhammadhassan/.gradle/caches/transforms-3/f12635da04cbe9aa22a214db6c756580/transformed/jetified-profileinstaller-1.2.0-alpha02/AndroidManifest.xml:38:13-44
-306            android:enabled="true"
-306-->[androidx.profileinstaller:profileinstaller:1.2.0-alpha02] /Users/muhammadhassan/.gradle/caches/transforms-3/f12635da04cbe9aa22a214db6c756580/transformed/jetified-profileinstaller-1.2.0-alpha02/AndroidManifest.xml:39:13-35
-307            android:exported="true"
-307-->[androidx.profileinstaller:profileinstaller:1.2.0-alpha02] /Users/muhammadhassan/.gradle/caches/transforms-3/f12635da04cbe9aa22a214db6c756580/transformed/jetified-profileinstaller-1.2.0-alpha02/AndroidManifest.xml:40:13-36
-308            android:permission="android.permission.DUMP" >
-308-->[androidx.profileinstaller:profileinstaller:1.2.0-alpha02] /Users/muhammadhassan/.gradle/caches/transforms-3/f12635da04cbe9aa22a214db6c756580/transformed/jetified-profileinstaller-1.2.0-alpha02/AndroidManifest.xml:41:13-57
-309            <intent-filter>
-309-->[androidx.profileinstaller:profileinstaller:1.2.0-alpha02] /Users/muhammadhassan/.gradle/caches/transforms-3/f12635da04cbe9aa22a214db6c756580/transformed/jetified-profileinstaller-1.2.0-alpha02/AndroidManifest.xml:42:13-44:29
-310                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-310-->[androidx.profileinstaller:profileinstaller:1.2.0-alpha02] /Users/muhammadhassan/.gradle/caches/transforms-3/f12635da04cbe9aa22a214db6c756580/transformed/jetified-profileinstaller-1.2.0-alpha02/AndroidManifest.xml:43:17-91
-310-->[androidx.profileinstaller:profileinstaller:1.2.0-alpha02] /Users/muhammadhassan/.gradle/caches/transforms-3/f12635da04cbe9aa22a214db6c756580/transformed/jetified-profileinstaller-1.2.0-alpha02/AndroidManifest.xml:43:25-88
-311            </intent-filter>
-312        </receiver>
-313    </application>
-314
-315</manifest>
+90        </receiver>
+91    </application>
+92
+93</manifest>

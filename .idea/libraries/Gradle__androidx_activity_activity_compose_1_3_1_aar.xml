@@ -1,12 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.activity:activity-compose:1.3.1@aar">
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/55e9ec6eab02c87af99b8f4ca26028c5/transformed/jetified-activity-compose-1.3.1/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/55e9ec6eab02c87af99b8f4ca26028c5/transformed/jetified-activity-compose-1.3.1/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/55e9ec6eab02c87af99b8f4ca26028c5/transformed/jetified-activity-compose-1.3.1/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/f22f34d77359ebf22f78ff0e81c7ef1b/transformed/jetified-activity-compose-1.3.1/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/f22f34d77359ebf22f78ff0e81c7ef1b/transformed/jetified-activity-compose-1.3.1/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/f22f34d77359ebf22f78ff0e81c7ef1b/transformed/jetified-activity-compose-1.3.1/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/ddb118173fa44d06a725cb8f299f2b39/transformed/jetified-activity-compose-1.3.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/ddb118173fa44d06a725cb8f299f2b39/transformed/jetified-activity-compose-1.3.1/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/ddb118173fa44d06a725cb8f299f2b39/transformed/jetified-activity-compose-1.3.1/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

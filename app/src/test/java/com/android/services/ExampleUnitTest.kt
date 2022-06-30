@@ -1,4 +1,4 @@
-package com.screening.app
+package com.canbus.app
 
 import org.junit.Test
 

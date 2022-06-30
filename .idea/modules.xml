@@ -2,9 +2,18 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ScreeningApp.iml" filepath="$PROJECT_DIR$/.idea/modules/ScreeningApp.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/ScreeningApp.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/ScreeningApp.app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ScreeningApp.buildSrc.iml" filepath="$PROJECT_DIR$/.idea/modules/ScreeningApp.buildSrc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Canbus.iml" filepath="$PROJECT_DIR$/.idea/modules/Canbus.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Canbus.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Canbus.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Canbus.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Canbus.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Canbus.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Canbus.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Canbus.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Canbus.app.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Canbus.buildSrc.iml" filepath="$PROJECT_DIR$/.idea/modules/Canbus.buildSrc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Canbus.buildSrc.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Canbus.buildSrc.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Canbus.buildSrc.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Canbus.buildSrc.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/usbserial/Canbus.usbserial.iml" filepath="$PROJECT_DIR$/.idea/modules/usbserial/Canbus.usbserial.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/usbserial/Canbus.usbserial.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/usbserial/Canbus.usbserial.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/usbserial/Canbus.usbserial.main.iml" filepath="$PROJECT_DIR$/.idea/modules/usbserial/Canbus.usbserial.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/usbserial/Canbus.usbserial.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/usbserial/Canbus.usbserial.unitTest.iml" />
     </modules>
   </component>
 </project>

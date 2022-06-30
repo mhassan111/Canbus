@@ -18,8 +18,8 @@ kotlin {
     }
 }
 
-import com.screening.app.buildsrc.Libs
-import com.screening.app.buildsrc.ConfigData
+import com.canbus.app.buildsrc.Libs
+import com.canbus.app.buildsrc.ConfigData
 
 android {
     signingConfigs {
@@ -39,7 +39,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.screening.app"
+        applicationId "com.canbus.app"
         minSdk ConfigData.minSdkVersion
         targetSdk ConfigData.targetSdkVersion
         versionCode ConfigData.versionCode
@@ -115,6 +115,8 @@ android {
 
 dependencies {
 
+    implementation project(':usbserial')
+
     // Kotlin
     implementation Libs.Kotlin.stdlib
     implementation Libs.Kotlin.kts
@@ -156,17 +158,17 @@ dependencies {
     implementation Libs.Room.coroutine_support
 
     // Firebase
-    implementation Libs.Firebase.firebase_crashlytics
-    implementation Libs.Firebase.firebase_analytics
-    implementation Libs.Firebase.firebase_messaging
-    implementation Libs.Firebase.firebase_firestore
-    implementation Libs.Firebase.firebase_auth
+//    implementation Libs.Firebase.firebase_crashlytics
+//    implementation Libs.Firebase.firebase_analytics
+//    implementation Libs.Firebase.firebase_messaging
+//    implementation Libs.Firebase.firebase_firestore
+//    implementation Libs.Firebase.firebase_auth
 
     // Retrofit
-    implementation Libs.Retrofit.retrofit
-    implementation Libs.Retrofit.gson_converter
-    implementation Libs.Retrofit.logging_interceptor
-    implementation Libs.Retrofit.rxjava_adapter
+//    implementation Libs.Retrofit.retrofit
+//    implementation Libs.Retrofit.gson_converter
+//    implementation Libs.Retrofit.logging_interceptor
+//    implementation Libs.Retrofit.rxjava_adapter
 
     // Okhttp
     implementation Libs.Okhttp.ok_http
@@ -181,12 +183,15 @@ dependencies {
     androidTestImplementation Libs.Test.composeUiTest
     debugImplementation Libs.Test.composeToolingTest
 
+    implementation 'com.github.anastr:speedviewlib:1.6.0'
+
+
     // Compose Destination Library
 //    implementation Libs.AndroidX.Compose.Library.raamcosta_compose_detination
 //    ksp Libs.AndroidX.Compose.Library.raamcosta_ksp
 
 }
 
-apply plugin: 'com.google.gms.google-services'
+//apply plugin: 'com.google.gms.google-services'
 apply plugin: 'kotlin-android'
-apply plugin: 'com.google.firebase.crashlytics'
+//apply plugin: 'com.google.firebase.crashlytics'

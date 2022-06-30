@@ -37,9 +37,9 @@
 -dontwarn androidx.**
 -keep class androidx.** { *; }
 -keep interface androidx.** { *; }
--keep class com.screening.app.featureCallScreening.domain.** { *; }
--keep class com.screening.app.featureImportContacts.domain.** { *; }
--keep class com.screening.app.models.** { *; }
+-keep class com.canbus.app.featureCallScreening.domain.** { *; }
+-keep class com.canbus.app.featureImportContacts.domain.** { *; }
+-keep class com.canbus.app.models.** { *; }
 
 # This is a configuration file for ProGuard.
 # http://proguard.sourceforge.net/index.html#manual/usage.html

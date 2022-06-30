@@ -1,5 +1,5 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
-import com.screening.app.buildsrc.Libs
+import com.canbus.app.buildsrc.Libs
 
 buildscript {
     ext.kotlin_version = '1.6.10'
@@ -9,8 +9,8 @@ buildscript {
     }
     dependencies {
         classpath Libs.Plugins.androidGradlePlugin
-        classpath Libs.Plugins.googlePlayServicesPlugin
-        classpath Libs.Plugins.firebaseCrashlyticsPlugin
+//        classpath Libs.Plugins.googlePlayServicesPlugin
+//        classpath Libs.Plugins.firebaseCrashlyticsPlugin
         classpath Libs.Plugins.kotlinPlugin
         classpath Libs.Plugins.hiltPlugin
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
